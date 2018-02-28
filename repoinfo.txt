@@ -1,0 +1,43 @@
+I have temporarily granted access to the repository via drive letter R: on this system.
+This is not optimal when multiple users can access the repo at the same time.
+You should not go to R: or change any files their directly, use svn instead.
+The current URL is file:///R:/svn/trunk
+
+
+
+1:40 PM 9/26/2013 PROBLEMS
+	Uhable to compile any of the IMS stuff due to mising annotations h file referenced by sal.h
+	I found that the Microsoft Visual Studio 10.0\VC\Include folder is missing all kinds of .h files
+	(vurses the clean install I did of it on a new computer for this project).  Perhaps they got
+	put in another folder.  I found that the path was cross linked with MSDEV9 which could
+	cause the wrong tools to be executed and the wrong files to be included in a build.
+
+	I created (via wizard) a Win32 Console Project and it failed to compile due to inability to locate
+	stdio.h!
+
+	We shold set this system up so that none of the compilers and such are on the default path
+	and that it is explicitly set up for each project by bat file on start if we are going to have
+	multiple compilers on this sytem.
+
+---------------------------------------------------------------------
+DISREGARD THE REST
+---------------------------------------------------------------------
+
+The repository server is hard coded at IP 192.168.1.64
+It has the WINS name "Desktop"
+I am using the IP address here.
+
+URL : svn+jetec://Admin@192.168.1.64/cygdrive/c/IMS5000.repo/svn/trunk
+
+jetec is defined in your svn config file  under [tunnels] as
+jetec = \\cygwin\\bin\\ssh -p22440
+
+This implies the need for cygwin to be installed with ssh.
+
+Icon generation from svg files also uses cygwin
+
+=================================
+Note: Once I get outside access to the ssh server via a router pinhole, I will change
+the authentication to use a certificate.
+
+That will change the URL of the checkouts (which can be changed no problem)

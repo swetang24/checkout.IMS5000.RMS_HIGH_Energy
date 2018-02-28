@@ -1,0 +1,760 @@
+.LOG
+/Delta Notes for pending commit (don't keep oldies)/
+----------------------------------------------------
+7:04 PM 6/5/2012
+	SUPPRESS DEBUG MESSAGES AND BUTTONS
+		OPTION FOR DEBUG TO DEBUG VS NONE VS TO INFO
+		REMOVE GETCONV DDE BUTTON (NO GOOD)
+
+	Turn on scanner 2 at IMFS INIT DIALOG
+		
+
+7:10 PM 6/5/2012
+	sLastNewJob changed to LastNewJob.
+
+
+1:09 PM 6/14/2012
+	Added Debug Option for ini that suppress many messages
+		Just copyright scan datfile and errors.
+	2 Digit Scan Counter
+
+
+1:24 PM 7/18/2012
+CompileString
+JobName computed from expression in new ini var JobName
+	allows reording and addition of constant text to JobName line.
+
+IMPName computed from expressions in new ini vars IMPNameT and IMPNameB
+	Allows control of IMP naming scheme.
+
+Special Expression Var PCBoard which is PCBoardPN left of -
+	For use with IMPNameT IMPNameB and JobName only!!!
+
+New MatchLinks ini csv specifying link matching fields
+	default is 4,5,17,38,39
+
+Elliminated KEYFLAGS section and associated flags
+
+
+
+
+
+12:34 PM 8/14/2012
+-------------------------
+Fixed IMSFS BUG
+	CRASHES WHEN OUT OF ORDER FILES PRESENTED
+	Bug was due to null pointer when compiling name
+
+	expression in imsfs.ini at coderay before:
+		JobName= : %PCBoardPN% : %SalesOrderLine%
+	expression in imsfs.ini at jetec:
+		JobName=" : %PCBoardPN% : %FinishedModel% : %SalesOrderLine%"
+
+	Added test for NULL return from VGet
+
+5:37 PM 9/19/2012
+	XYG1000
+		Ported to VS10
+		Added WinRect save/restore to the JOG window
+
+
+11:43 PM 9/19/2012
+	IJESI24
+		Ported to VS10
+	XYG1000
+		Fixed GP Fauilt on exit
+
+	Fixed bug in CAL update where delta was wrong after update
+
+
+	Made XYG1000 Jog TopMost
+	Made XYSIM Jog TopMost
+
+	VISIFM02D Fixed -j option logic
+
+	IMSFS/IMSFS/xjob.cpp fixed bug when handling blank keys
+
+1:08 AM 9/20/2012
+
+4:03 PM 9/20/2012
+	IFMO2D _CAMCAL window SetFocus on WM_SETFOCUS back to previous focus
+	so that Jog does not loose focus.
+
+
+4:12 PM 9/20/2012
+	IFM02D SetFocus on WM_SETFOCUS works on XYTEST but not XYG1000
+
+4:31 PM 9/20/2012
+	IFMO2D Fixed Loss of JOG Focus problem when CALIBRATION popup opens.
+		CALPOPOP ON WM_SETFOCUS : SetFocus back to previous
+		CALPOPUP is now opened at prep time if -j or -c specified
+
+	Bumped version to 1.0.0.2
+
+
+11:53 AM 9/21/2012
+	Fixed bug where popup for preveiously selected locator would happen
+	during JOG in editor position setting for Inspector or Reader.
+
+
+	Copyright date range extended to 2012
+	Updated version number to 4.0.0.15
+	Update IMAPI to 3.0.1
+		Copyright date range extended to 2012
+	Added to IMAPI
+		IMClearSelLocator
+	IMS5000 calls IMClearSelLocator at start of VISPOSDP in EDITOR
+
+
+12:45 PM 9/21/2012
+	CenterCam button on Alignment Extension
+		Pressing CenterCam copies the ref pos to cam pos, centering the camera on it.
+
+4:15 PM 9/21/2012
+	BMS Footswitch Support
+		New StartMarkerBit functionality.
+		If an input bit named "StartMarker" is defined then 0 to 1 transitions
+		on it cause a start if the marker if it is ready.
+
+		IM5000.INI EXAMPLE (FOR INPUT RELAY 1)
+
+			[IBITS]
+			StartMarker=DIO.A0
+
+		Done!
+
+
+	visifm02d
+		prevent cal popup on job if not specified
+		stopped debug output about cal when not DebugMode
+
+
+	AE Default N Camera Positions and N Ref Positions changed from 2 to 1
+
+11:56 PM 10/3/2012
+
+Added Debug PDB to release builds
+		imslib32
+		jvmath32
+		vistest32
+		vislaser32
+		vismx600
+		vissim32
+		xytest
+		xyg1000
+		xysim32
+
+New version of VISIFMO2D.DLL (Locator1)
+
+	Fixed Locating Deadlock Conditions!
+
+	Ver++ to 1.0.0.3
+	Sleep(50) on XYN_READY after dev.killLiveLocate
+	Handle 0001* prefix on start response after IFM Application Mode
+	Return VISN_ERROR on locate fail not VISN_FAIL (thats for readers)
+
+	
+
+	Fixed VISIFMO2D (Locator1) bug where it would alternatelyt fail to select the
+	p rogram specified in the prep and fail the locate itself after editing a program in
+ 	the IFM and putting it back into Monitor mode.
+	Problem was an extra response message about a good trigger in the receive queue.
+
+	I added a filter and now it works right away!
+		Really allowed parse to accept extra input as ok.
+
+
+Prelim IMFSDoc with svg images
+	neet to convert to PNG for crappy IE
+
+
+10:21 AM 10/16/2012
+	IMSFS.RC IMSFS DIALOG LBS_MULTIPLESEL in developoment
+
+	zzzddeX functions defined out if not DEBUGPANEL
+
+	IMSFS.cpp
+		Fixed drawing tool leakage bug in WM_DRAWITEM
+		CreateDrawingTools and DestroyDrawingTools and static drawing tools
+
+	xconv.open xconv.close called directly
+
+
+10:56 PM 10/25/2012
+	Optional HTML Output of parsing results
+		ini options:
+			GenerateOutFiles=1
+			; html output on 1 or off 0
+
+	Auto Old File Purging
+		ini options:
+			PurgeCheckInterval=60
+			;check every n seconds : 0=off
+
+
+			;Days to keep files : 0=forever
+			DaysToKeepOutFiles=30
+			DaysToKeepProcessedFiles=30
+			DaysToKeepBadFiles=0
+
+	ALL IMSFS SOURCE DATA MOVED INTO ZIP FILES UNDER IMSFS DATA
+
+11:13 PM 10/25/2012
+	XJOB::CompileString
+		Error return
+		Error for macro not found
+		Error for PCBoard with PCBoardPN not defined
+		MDat expansion
+		MDatHex expansion
+
+	XJOB::Archive
+		Quoted CSV headings
+
+	ALT keys on buttons
+
+	LBS_SORT in development
+
+
+12:32 AM 10/31/2012
+IMSFS
+	FSGN20121010.zip added missing files
+
+	moveem.zip batch files to move DAT files in sequence for testing
+
+	Dat file history csv logging
+		ini opition LogDatHist=0
+
+	ini option MDatLengthMin=108
+	ini option MDatLengthMax=117
+
+	ini option JobMatch job matching expression
+
+	Seperate top and bottom qty
+	FullyLoaded now computed from saved missingcount
+
+	JobSig compiled JobMatch signature matching
+
+	New Multi Dat per Job file processing logic
+
+	Elliminated older MatchLinks IsTopBotMatch IsMisMatch IsFullMatch 
+
+	Elliminated Qty control
+
+	Auto Grow AllSec allocation schema (fixes parsing limitation)
+
+	MaxJobListSize default changed from 100 to 1000
+
+	New DAT error detection for
+		INVALID MATRIX
+		Missing FinishedModel
+		Unknown Fields
+
+
+	Ability to update (add dat files for) any including selected or running job with proper button count and list enables and updates.
+
+	inistr atomic increment/decrement with CriticalSection interlock
+
+	Fixed memory overwrite GP fauilt Issue
+		New InfoBox update strategy with MAXLINES=100
+
+	New DOT colors
+		Yellow if other side has more qty
+		Dim if nothing to do (completed)
+
+	Sizeable Window : In development
+
+	Removed MultiSel hacks
+	Remove LBS_SORT hacks (not compatible with LBS_NODATA)
+
+
+9:20 AM 10/31/2012
+	IMSFS Generates default keys if no keys defined
+
+5:56 PM 11/13/2012
+	IMS5000 Increase fixture max items to 1000 so tanh can finish his work on like 470 items.
+		sim tested full 1000 items in 40x25 .5x.5 with 3 digit SN 0..999 propogated multi trigger text
+			IMP Compile time (start button to first move) is pretty long but it works!
+
+
+	IMS5000 version number ++ to  4.0.1.27
+
+6:45 PM 11/13/2012
+
+IMSFS
+	sorting of XJOBINFO list items in development : Marked ///NEW:SORT
+	xconv.cpp handler for IMS ERROR events. : Marked ///ZZZNEW
+	imsfs.vcxproj added comctl32.lib
+	added iniInfoBoxMaxLines (default 200) : removed INFOBOXMAXLINES (was 100)
+	Header control in development : Marked ///ZZZ
+
+
+12:05 PM 11/14/2012
+	[*]IMS5000 AutoStart ini section logic
+		AutoStart section starts all listed normally
+		AutoStartMinimized start all listed minimized
+
+
+
+
+12:54 PM 11/14/2012
+	Added [AutoStartSkipCaptions] logic to AutoStart logic
+
+	IMS5000 version number ++ to  4.0.1.28
+
+
+10:57 AM 11/15/2012
+	Added Auto Start Positioning Logic
+
+		Changed [AutoStartSkipCaptions] to [AutoStartCaptions] so it can be used
+		to find windows for positioning too.
+
+		Added [AutoStartPositions]
+
+		Added AutoStartSleepSecs 0..60
+
+	IMS5000 version number ++ to  4.0.1.29
+
+4:12 PM 11/15/2012
+	Added AutoStartCommands to send WM_COMMAND for menu idms to apps
+		Used to send connect menu commands to IFM windows
+
+	Reorganized all AutoStart code 
+
+	IMS5000.INI vars
+		[IMS5000] section
+			AutoStartPosDelay 0..60 (def 5) secs to wait before positioning
+			AutoStartCmdDelay 0..60 (def 0) secs to wait after positioning before commanding
+		ini sections (alll share common keys)
+			AutoStart
+				lists of programs to start
+			AutoStartMinimized
+				list of programs to start minimized
+			AutoStartCaptions
+				matches window keys to captions
+			AutoStartPositions
+				list xy coordinates to postion windows matching keys
+			AutoStartCommands
+				lists idm s to send in WM_COMMAND to windows matching keys
+
+7:05 PM 11/15/2012
+	IMSFS DDE User Auth Interface IN DEVELOPMENT
+		marked ///ZZZUSER
+		login conv added
+		debug controls added to
+			poke login:user:"user,acode,level"
+			request login:authorize
+			define user
+			define acode
+		dev dde logic for authorize works!!!
+
+	IMSFS DEBUG PANEL ENABLED FOR DEVELOPMENT
+	IMSFS System Menu IN DEV
+		see BuildSysMenu IN DEV
+
+
+8:49 PM 11/15/2012
+	Error if imsfs cant connect to ims5000
+	development
+		changed IDC_STATEINFO height from 30 to 25 to prevent it from overwriting header
+		generate headers in loop
+		CreateHeaderControl() now after JobList.init()
+
+IMSFS 
+	No bottom start if top not done.
+	Minor icon conveyor icon changes
+	
+
+9:57 PM 11/15/2012
+	IMSFS Icon now works in title bar,task manager,alt tab, etc...
+
+1:10 PM 11/19/2012
+	VISIFMO2D
+		Added Inspect capability
+		ver++ to  1.0.0.4
+
+
+1:26 PM 11/19/2012
+	IMSFS ONPDONE Overlap logic
+
+10:10 AM 11/26/2012
+	VISIFMO2I102 : Live mode
+	ver to 1.0.0.30
+
+1:35 PM 11/26/2012
+[*] VISIFMO2D : remove match string and logic
+IMS5000
+	ver ++ to 4.0.1.30
+	Fixed CAL to prep selected locator prior to starting live.
+
+
+3:47 PM 11/26/2012
+IMS5000 Matrix Mark editor
+	MDat expression now expanded from test variables
+	Live update on changes to:
+		MDat
+		Headings
+	Shows 0s gray visible during edit
+
+	IMP.cpp support for expression expansion with prevals.
+
+
+
+7:29 PM 11/26/2012
+	IMS5000 : Changed QRCode default to Binary.
+
+
+
+10:34 PM 11/26/2012
+	IMSFS : Conveyor Not Ready state message
+
+11:47 AM 1/3/2013
+	Added sort after add to job list in watchdir
+
+12:43 PM 1/3/2013
+Fixed Bug:Where IMS Error did not clear IMSBusy so user was in deadlock
+Fixed Bug:Where IMS sends no message with the error
+
+4:06 PM 1/3/2013
+Fixed logic to reenable start button after error and board removal.
+Cleared conveyor section Error flag on !pip when not running.
+
+4:37 PM 1/3/2013
+Jobs sorted by ini JobSort expression (default is ini JobName value)
+
+5:08 PM 1/3/2013
+new Qty and Count format "Tn/q Bn/q" with TColWidth BColWidth ini vars governing column widths
+
+
+6:46 PM 1/3/2013
+	new scanner module KBL1301
+		ScannerType defalt now KEYENCEBL1301
+
+
+7:13 PM 1/3/2013
+Fixed scanner desctructors to be virtual so they get called.
+KBL1301 turns off laser
+
+7:50 PM 1/3/2013
+Scanner laser on in autobot or thru modes only
+	scanner api am20 ifm kbl1301
+		new isOpen for can auto bot start
+		new stop to stop laser
+
+
+
+9:49 PM 1/3/2013
+Multi coluumn output replaces JobName
+All columns have minimum width specified in ini
+All columns auto grow as needed
+
+11:36 PM 1/3/2013
+ZZZ:SIZE sizing logic in progress
+
+12:22 AM 1/4/2013
+Improved Sizeing logic (almost perfect excep drawing butns when y sizing down)
+
+8:29 AM 1/4/2013
+imsfs version to 1.02
+
+4:23 PM 1/5/2013
+New Job Detail
+	IDC_DETAIL
+	Replace old TQTY and BQTY controls
+	new ini JobDetail expression to define Job Detail
+		defauilt:
+			%ID% %PCBoardPN% %FinishedModel% %SalesOrderLine%\n
+			T %TCOUNT% of %TQTY% complete : %TREM% remain : %TCAN% can start\n
+			B %BCOUNT% of %BQTY% complete : %BREM% remain : %BCAN% can start
+
+
+Improved State Info
+	Ready to start message now included ID and (top)|(bottom)|""
+	seperate Ready to start Auto Bot message
+	Running state messages with id and side
+	Not ready to start message instead of blank
+	up to two lines.
+
+
+Fixed Initial Auto Column Adjustment Bug
+	After timeout redraws to handle initial auto col sizeing
+		InitTimeLeft=3
+
+Intrnals
+	nlDecode() to support \n newlines in ini entries
+
+	new pseudo vars for expressions (mainly for JobDetail)
+		%ID% %TQTY% %TCOUNT% %TREM% %TCAN% %BQTY% %BCOUNT% %BREM% %BCAN%
+
+	new UpdateJobUI()
+		Unifies and Replaces UpdateJobUIEnables UpdateJobUICounts and StateInfoUpdate
+
+
+New dot color rules
+	Gray = Empty
+	Yellow = Data Pending (other side has a higher qty)
+	Green = Data Not Pending
+	Bright means Marking Pending
+	Dim means No Pending Marking (Complete unless more data is pending)
+
+	Dim on first DAT now bright since marking is pending
+
+	Startability is not indicated it is based on the readyness of the
+	IMS the scanner and the counts.
+
+
+	IMSFSDoc FSDOTS.png and .pdf describe new dot color logic
+
+
+8:25 AM 1/7/2013
+IMSFSDoc new FSDOTS.svg shows dot color logic
+IMSFS now prompts for board removal on locator and reader errors due to:
+IMS5000 Fixed Error Propogation to DDE HOST during locate read and inspect steps
+new unified DDE and UI Unlock handling of IMN_ERROR for all step lists not just imsteps
+
+9:58 AM 1/9/2013
+	IMSFS Save and Restore Window Size and Position
+		** Still requires Authorization Step to be added
+
+11:15 PM 1/9/2013
+	IMSFS new Authorization Dialog
+		ini UserAuthTimeout=30 specifies how long auth lasts since last authorized function
+	AuthCheck(4) prior to save window rect
+
+11:47 PM 1/9/2013
+
+11:49 PM 1/9/2013
+
+9:53 AM 1/10/2013
+IMS5000
+	Fixed bug in notes where runtime notes wrongly accessed the last editit imps notes instead
+	of the run imp files notes.
+
+	Updated copyright date to include 2013
+
+	Updated Version to 4.0.1.31
+
+
+5:34 PM 1/14/2013
+[*]IMS5000 Editor VIS Prep for Live
+	[*] Inspector Send prep strings at start of Position edit
+	[*] Reader    Send prep strings at start of Position edit
+	[*] Aligner   Send prep strings at start and when it changes
+
+6:57 PM 1/14/2013
+[*] IMS5000 Do error on reader bad var and unlock
+	Error = Invalid Reader Setup
+
+IMS5000 version to 4.0.1.32
+
+
+9:19 PM 1/14/2013
+[*]> IMSFS SYSMENU : Adjust Job Counts
+	[*]WMSC_ADJCOUNT
+	[*]IMFSADJCOUNT Dialog
+	[*]IMFSADJCOUNTDP()
+	[*]count cant exceed current qty
+[*]> IMSFS SYSMENU : Adjust Job Quantities
+	[*]WMSC_ADJQTY
+	[*]IMFSADJQTY Dialog
+	[*]IMFSADJQTYDP()
+	[*]qty cant be less than count
+	[*]tqty+bqty must be > 0
+
+9:41 PM 1/14/2013
+[*]> Optionaly enforce level 2 for IDC_TOP IDC_BOT IDC_ABS
+	ini RequireJobAuth=0 default
+
+9:52 PM 1/14/2013
+---
+[ ]> IMSFS INI DataFileExtension (.DAT | .DD | both | ...)
+---
+
+
+10:08 PM 1/14/2013
+IMSFS fixed bug where <0 coords in WinRect would cause it to be ignored
+when loading.
+
+11:10 AM 1/15/2013
+IMSFS Added logic to not pass a board that was inspected and failed.
+
+11:59 PM 1/15/2013
+IMSFS Fixed Vision Error -> loop cant sel inspect fail (when it didnt)
+	problem was extra message from device waiting in buffer
+	was interpreted as response to prog sel command.
+
+	Added 2nd attempt to recv if first is incorrect
+
+	Added 15 second timeout (setsockopt) on receive since next recv could
+	deadlock.  This also prevents other no response from scanner deadlocks.
+
+
+
+9:51 PM 1/23/2013
+IMS5000 WMTRX
+	Extended Matrix Mark for 14x31 large matrix
+	Extended to support size in cells of up to 32 on a side
+	with product no larger than 4*119 in hex or 119 in binary.
+
+	oLD LIMIT WAS 20X20
+
+
+7:46 PM 1/28/2013
+	IMSFS
+		Removed all _DEBUGPANEL
+
+		Added IDC_STACK owner draw listbox(in development)
+
+		Authorization for Thru option
+			New ini RequireThruAuth default 0
+
+
+		Removed close on ESC key logic (leftover from early development)
+
+		Fixed restore of button state logic on auth fail for BOTMODE and ABOTMODE.
+
+
+12:09 AM 1/29/2013
+	Created XJOBSTACK Class (in development)
+		new globals
+			XJOBSTACK Stack
+			HWND hStack
+	Owner Draw code for STACK (in development)
+
+2:45 PM 1/29/2013
+LoadToStackBottom hard coded at 1 (due to complication of queued boards in feeder and IMW)
+
+1:25 AM 1/30/2013
+Brain Salad Surgury
+
+2:17 PM 2/8/2013
+[*]> IMSFS SYSMENU : Delete Job
+	[*]WMSC_DELJOB
+
+[*]> IMSFS SYSMENU : Delete All Jobs
+	[*]WMSC_DELALLJOBS
+
+[*]> IMSFS SYSMENU : Next Job No
+	[*]WMSC_NEXTJOBNO
+	[*] display current value
+	[*] On change first check for conflicts warn and only if ok allow
+
+
+[*] All job utils : lock/unlock file scanning during operations
+
+NEW PROCESS QUEUE
+	[*] PROCESSING LIST SHOWING ITEMS IN THE UNLOADER
+	[*] NEW ITEMS APPEND TO BOTTOM
+	[*] EACH ITEM HAS ITS OWN RUN QTY
+	[*] ON MARKING BOTH THE JOB AND THE UNLOADER NUMBERS UPDATE
+	[*] ON NEW DATA ONLY THE JOB NUMBERS INCREASE
+	[*] START TOP START BOT AUTOBOT CHANGE
+		[*] NOW ACCEPT RUN QTY <= REMAINING (DEFAULT)
+		[*] ITEMS INSERT INTO PROCESSING QUEUE INSTEAD OF STARTING
+	[*] SEPERATE CONTROLS TO MANAGE RUN VS STOPPED STATE OF PROCESS QUEUE
+
+5:37 PM 2/8/2013
+[*]First last parse times
+	[*] in JOB.INI
+	[*] in JOBHIST.CSV
+		[*] Fix uninitialized dates
+
+
+5:37 PM 2/8/2013
+Improved StackItem display
+Improved Archive
+Updated version to 1.10 
+Updated copyright date to 2013
+
+6:57 AM 3/7/2013
+updated version to 1.20
+new system command Unlock IMS5000
+new ini key UnlockIMSMinAuthLevel=4 sets level (0 for no auth required)
+
+9:34 PM 3/7/2013
+IMSFS
+
+	Improved AutoBot barcode logic
+		Changes LastScan PrevScan logic to sect1Scan sect2Scan logic
+		no more longboard logic at PIP2 required (always uses sect2Scan)
+		Scanner reads to sect1Scan unless sect1 is Ejecting in which case it reads to sect2Scan
+		sect1Scan is copied to sect2Scan at start of sect1 eject (transfer to sect2)
+
+	Improved Error Logic and Messages
+		Error logic improved to allow errors set deep to not be overwritten by more general higher level errors.
+
+
+	Improved detail in the following board removal error messages:
+		Not Running! Remove Boards
+		Barcode Scan Failed! Remove Boards
+		Barcode not found in Jobs! Remove Boards
+		Barcode not startable! Remove Boards
+
+	Fixed column width bug where the Top Count column would grow large at start or run.
+
+	Increased version from 1.20 to 1.21
+
+
+	
+
+
+
+9:36 AM 3/8/2013
+
+	Fixed negative n Can Autobot Start message
+		Fixed %ABCAN% expressoin to not subtract abstarted, this was an error.
+
+	version from 1.21 to 1.22
+
+
+9:41 AM 4/27/2013
+IMS5000
+	New dongle support
+	[*]Marke #error DONGLE all code
+	[*]Remove old hardlock code
+
+9:52 AM 4/27/2013
+	Running Envilope first time with developer key (EMS offline) 
+	updated
+	SafeNet building and downloading "Customized Libs" and it takes like 42 minutes!!!!
+
+9:19 PM 5/7/2013
+	JJ STARTED MODIFICATION OF DMC1000 DRIVER TO SUPPORT STEPPER MOTORS (OPEN LOOP)
+
+5:07 PM 5/8/2013
+	EXTEND DMC1000 DRIVER FOR STEP MOTOR SUPPORT
+	stepper ini option
+		AM->MC and TP->RP replacements
+		DP and DE on stepper home
+
+	Not yet tested (esp vectors: AMS->MCS is this evan a command)		
+
+11:13 AM 5/14/2013
+	imsfs Added nuber on file error message for move in watchdir
+7:29 PM 6/20/2013
+XYG1000
+	ver ++
+	FootSwitchInputBit=-1
+	FootSwitchActiveLow=1
+
+
+11:19 PM 6/20/2013
+XYG1000
+	fixed all warnings for strcpy sprintf wsprintf lstrcpy strcat lstrcat _fcvt
+
+4:26 PM 7/17/2013
+IMSFS
+	version ++ from 1.22 to 1.30
+
+	Bug fixes in AutoBottom logic
+		Qty startable calculations
+		Button enables
+		Proper update of JobList on barcode
+
+	Development support for FakeCode if Debug>1
+
+	Wider detail text area to prevent wrapping
+
+	new iniRequireSysAuth option (default 0) to remove password requirement
+	for Job utility functions.
+
+

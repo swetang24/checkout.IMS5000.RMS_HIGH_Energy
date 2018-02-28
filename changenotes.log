@@ -1,0 +1,74 @@
+.LOG
+BACKDOOR: JETECNEV
+
+	Changing all projects as follows
+Config>General>Output directory
+	$(PROJ)\$(Configuration)\
+Config>VC++ Directories>Include
+	$(PROJ); ...
+Config>VC++ Directories>Library
+	$(PROJ)\Debug;$(PROJ);...
+	$(PROJ)\Release;$(PROJ);...
+	or
+	$(PROJ)\$(Configuration);$(PROJ); ...
+Linker
+	General
+		Output File
+			Inherit
+	Input
+		Additional Dependencides
+			NO $(PROJ) prefix on solution built libs
+
+	Advanced (for DLL)
+		Import Library
+			Inherit
+
+set project dependencies
+
+
+
+12:31 AM 11/24/2011
+
+1:03 AM 11/24/2011
+
+12:41 PM 12/1/2011
+	IMS5000.cpp 
+	JJ added killhlock=true to allow debug with no hardlock.
+
+
+5:39 PM 2/15/2012
+
+2:51 PM 3/12/2012
+	renamed _visdev32 to visdev32
+	deleted visdev32 sln
+	added vismx60032 to big solution
+
+3:42 PM 3/12/2012
+	vissim32 added
+
+5:46 PM 3/12/2012
+	Got proper VIS32 FROM JETEC SERVER
+
+11:49 AM 4/1/2012
+
+4:26 PM 4/15/2012
+	moved to coderay.IMS5000 and added to repo.
+
+12:43 PM 5/31/2012
+	added dm00132 and dmtest to solution and updated to
+	put restults in target.
+
+
+3:04 PM 9/27/2012
+Porting for release debug
+	Change PDB directory
+
+		Project>Properties>Linker>Debugging>PDB Directory :
+			or
+				Inherit Defaults
+				$(PROJ)\$(Configuration)\$(TargetName).pdb
+	Add debug info to linker
+		Project>Properties>Linker>Debugging>Generate Debug Info>YES
+
+
+3:14 PM 9/27/2012
