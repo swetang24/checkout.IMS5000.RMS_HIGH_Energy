@@ -1,0 +1,46 @@
+.LOG
+
+
+3:03 PM 7/28/2004
+*	IARC 001
+
+9:20 AM 8/20/2004
+New version of IMS5000 - 4.0.0.2
+* Symbol marks - changed xscale, yscale to xres, yres, and xdots
+* Updated symbol mark edit dialog and the read/write of IMP marks
+* AlphaJet IJM_GETFONTINFO now returns fonts as 'fontname: desc' and 
+  IMS5000 trims off the descriptions in list of marks, but shows them as 
+  'fontname: desc' in font selection combo boxes.
+* IJM_FINDFONT for AlphaJet takes in strings as 'fontname: desc' but
+  ignores the desc in comparison.  
+10:44 AM 8/20/2004
+* Fixture editor now allows multiple selection of nests for deletion
+3:03 PM 8/31/2004
+New Version - 4.0.0.4
+* Got rid of problem with time variables always adding PM if 24 hours is selected.
+* File list update - The last file opened will be selected and scrolled into the view. 
+
+9:43 AM 9/28/2004
+*	Up version to 4.0.0.5
+*	Added DDE support for IO
+		Execute MAPINPUT,[IBIT name]
+		Execute MAPOUTPUT,[OBIT name]
+		request input value
+		poke output value
+
+
+8:22 AM 11/17/2004
+*	Up version to 4.0.0.6
+*	added debug output to cal module
+*	IARC 002
+
+2:44 PM 9/30/2005
+*	Up version to 4.0.0.11
+*	IARC 003
+
+10:43 AM 11/30/2006
+*	Up version to 4.0.0.12
+*	Modify serial numbers to not use empty nest locations
+
+10:45 AM 12/17/2006
+*	IARC 004

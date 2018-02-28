@@ -1,0 +1,16 @@
+; cdb1113.def : Declares the module parameters for the DLL.
+
+LIBRARY      "cdb1113"
+DESCRIPTION  'cdb1113 Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	CreateWorkOrder
+	SetMVError
+	GetMVError
+	SetNETState
+	GetNETState
+	GetAPI
+
+SECTIONS
+	.sdata READ WRITE SHARED

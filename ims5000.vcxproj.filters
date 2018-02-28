@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{464adc69-06e7-430e-bf54-6d5ea85f1aeb}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2262a5e0-f540-4120-9dfb-86ebc100bbec}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0c0d8a3a-e63d-45d2-9a10-69d1f4633295}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AE.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AUX5000.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BSMFIXUP.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C128.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2OF5.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C39.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C93.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CAL.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDEV.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDM.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAMP.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CUPCEAN.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CURE.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DDESRVR.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DEVBC.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EDITOR.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FILES.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMCORR.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMF.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMFHEADER.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMFNESTS.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMP.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMPFONTS.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMPHEADER.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="impmarks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="impudhas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMPVARS.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ims5000.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMSConfigIni.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMSIO.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LBMP.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LOGIN.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PATCH.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="preview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RUN.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="STDLOC.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VALIDATE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VISLAMP.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WINFONT.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XLOAD.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AE.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AUX5000.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BSMFIXUP.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C128.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C2OF5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C39.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C93.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CAL.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDEV.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDM.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CLAMP.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUPCEAN.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CURE.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DDESRVR.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVBC.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EDITOR.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FILES.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMCORR.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMF.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMP.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMS5000.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMSConfigIni.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMSCONST.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMSIO.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jvmath32\jvmath32.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LBMP.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LOGIN.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PATCH.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RUN.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="STDLOC.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VALAPI.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VALIDATE.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VISLAMP.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WINFONT.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XIMF4000.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XIMFV330.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XIMFV338.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XIMP4001.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XIMPV330.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XIMPV338.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XIMPV341.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XLOAD.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="FILEICON.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ico00001.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ico00002.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon2.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon3.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="IMS.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="IMW90.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="IMW90A.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="logo.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SMC90W.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SMS92.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SMS92A.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="conversion.txt" />
+    <None Include="LinghaiNotes.txt" />
+    <None Include="LinghaiRemider.txt" />
+    <None Include="notes.txt" />
+    <None Include="preview.spp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IMS5000.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

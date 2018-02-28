@@ -1,0 +1,2756 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "ims5000.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_IMF                 ICON                    "icon2.ico"
+IDI_IMP                 ICON                    "icon1.ico"
+IMS                     ICON                    "IMS.ICO"
+IMW                     ICON                    "IMW90.ICO"
+SMC                     ICON                    "SMC90W.ICO"
+SMS                     ICON                    "SMS92.ICO"
+SMA                     ICON                    "SMS92A.ICO"
+IMA                     ICON                    "IMW90A.ICO"
+IDI_NEST                ICON                    "ico00001.ico"
+IDI_NEST2               ICON                    "ico00002.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+FILEICON                BITMAP                  "FILEICON.BMP"
+PATTERN1                BITMAP                  "bitmap1.bmp"
+IDB_DIRIMAGES           BITMAP                  "bmp00001.bmp"
+LOGO                    BITMAP                  "LOGO.BMP"
+LOGIN                   BITMAP                  "LOGIN.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IMS5000 ACCELERATORS
+BEGIN
+    "N",            IDM_NEW,                VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_OPEN,               VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_RUN,                VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_SAVE,               VIRTKEY, CONTROL, NOINVERT
+    "T",            IDM_TEST,               VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        IDM_QUIT,               VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_ACCEL40018,          VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      IDA_CANCEL,             VIRTKEY, NOINVERT
+    VK_F10,         IDA_EXTRA3,             VIRTKEY, NOINVERT
+    VK_F11,         IDA_INIT,               VIRTKEY, NOINVERT
+    VK_F12,         IDA_START,              VIRTKEY, NOINVERT
+    VK_F7,          IDA_CLAMPREL,           VIRTKEY, NOINVERT
+    VK_F8,          IDA_EXTRA1,             VIRTKEY, NOINVERT
+    VK_F9,          IDA_EXTRA2,             VIRTKEY, NOINVERT
+    VK_UP,          ID_ACCEL40017,          VIRTKEY, CONTROL, NOINVERT
+    "^A",           IDA_ALL,                ASCII,  NOINVERT
+    "^Q",           IDA_QTY,                ASCII,  NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+LOGIN MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Print ON",                   IDM_PRINTON
+        MENUITEM "Sh&ut Down!",                 IDM_SHUTDOWN
+        MENUITEM "&Clean",                      IDM_CLEAN
+    END
+    MENUITEM "\a&About",                    IDM_ABOUT
+END
+
+FILESA MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Run\tCtrl+R",                IDM_RUN
+        MENUITEM "&Quit\tCtrl+BkSpace",         IDM_QUIT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print ON",                   IDM_PRINTON
+        MENUITEM "Sh&utdown",                   IDM_SHUTDOWN
+        MENUITEM "&Clean",                      IDM_CLEAN
+    END
+    MENUITEM "&Cal",                        IDM_CAL
+    MENUITEM "\a&About",                    IDM_ABOUT
+    MENUITEM "Help",                        IDM_HELP
+END
+
+FILESB MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Run\tCtrl+R",                IDM_RUN
+        MENUITEM "&Open\tCtrl+O",               IDM_OPEN
+        MENUITEM "&Quit\tCtrl+BkSpace",         IDM_QUIT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print ON",                   IDM_PRINTON
+        MENUITEM "Sh&utdown",                   IDM_SHUTDOWN
+        MENUITEM "&Clean",                      IDM_CLEAN
+    END
+    MENUITEM "&Cal",                        IDM_CAL
+    MENUITEM "\a&About",                    IDM_ABOUT
+    MENUITEM "Help",                        IDM_HELP
+END
+
+FILESC MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Run\tCtrl+R",                IDM_RUN
+        POPUP "&New\tCtrl+N"
+        BEGIN
+            MENUITEM "&Program",                    IDM_NEWIMP
+            MENUITEM "&Fixture",                    IDM_NEWIMF
+        END
+        MENUITEM "&Open\tCtrl+O",               IDM_OPEN
+        MENUITEM "&Delete",                     IDM_DELETE
+        MENUITEM "&Quit\tCtrl+BkSpace",         IDM_QUIT
+        MENUITEM SEPARATOR
+        MENUITEM "S&hell",                      IDM_SHELL
+        MENUITEM "&Exit",          IDM_EXIT
+        MENUITEM "&Print ON",                   IDM_PRINTON
+        MENUITEM "Sh&utdown",                   IDM_SHUTDOWN
+        MENUITEM "&Clean",                      IDM_CLEAN
+    END
+    MENUITEM "&Cal",                        IDM_CAL
+    POPUP "C&onfig"
+    BEGIN
+        MENUITEM "IMS5000 Settings...",         IDM_CFGIMS
+        MENUITEM "IM5000 Settings...",          IDM_CFGIM
+        MENUITEM "Company Information...",      IDM_COM
+    END
+    MENUITEM "\a&About",                    IDM_ABOUT
+    MENUITEM "Help",                        IDM_HELP
+END
+
+FILESD MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Run\tCtrl+R",                IDM_RUN
+        POPUP "&New\tCtrl+N"
+        BEGIN
+            MENUITEM "&Program",                    IDM_NEWIMP
+            MENUITEM "&Fixture",                    IDM_NEWIMF
+        END
+        MENUITEM "&Open\tCtrl+O",               IDM_OPEN
+        MENUITEM "&Delete",                     IDM_DELETE
+        MENUITEM "&Quit\tCtrl+BkSpace",         IDM_QUIT
+        MENUITEM SEPARATOR
+        MENUITEM "S&hell",                      IDM_SHELL
+        MENUITEM "&Exit",                       IDM_EXIT
+        MENUITEM "&Print ON",                   IDM_PRINTON
+        MENUITEM "Sh&utdown",                   IDM_SHUTDOWN
+        MENUITEM "&Clean",                      IDM_CLEAN
+    END
+    MENUITEM "&Users!",                     IDM_USERS
+    POPUP "C&onfig"
+    BEGIN
+        MENUITEM "Set S&hell",                  IDM_CFGSHELL
+        MENUITEM "&Save Configuration",         IDM_CFGSAVE
+        POPUP "S&ettings"
+        BEGIN
+            MENUITEM "IMS5000 Settings...",         IDM_CFGIMS
+            MENUITEM "IM5000 Settings...",          IDM_CFGIM
+            MENUITEM "Company Information...",      IDM_COM
+        END
+    END
+    MENUITEM "&Cal",                        IDM_CAL
+    MENUITEM "\a&About",                    IDM_ABOUT
+    MENUITEM "Help",                        IDM_HELP
+END
+
+EDITOR MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Test\tCtrl+T",               IDM_TEST
+        MENUITEM "&Save\tCtrl+S",               IDM_SAVE
+        MENUITEM "Save &As...",                 IDM_SAVEAS
+        MENUITEM "&Quit\tCtrl+BkSpace",         IDM_QUIT
+        MENUITEM SEPARATOR
+        MENUITEM "S&hell",                      IDM_SHELL
+        MENUITEM "&Print ON",                   IDM_PRINTON
+        MENUITEM "Sh&utdown",                   IDM_SHUTDOWN
+        MENUITEM "&Clean",                      IDM_CLEAN
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Delete",                     IDM_DELETE
+        MENUITEM "C&ut",                        IDM_CUT
+        MENUITEM "&Copy",                       IDM_COPY
+        MENUITEM "&Paste",                      IDM_PASTE
+        MENUITEM "Paste &After",                IDM_PASTEAFTER
+    END
+    POPUP "&New"
+    BEGIN
+        POPUP "&Variable"
+        BEGIN
+            MENUITEM "&Keyed...",                   IDM_NEWKVAR
+            MENUITEM "&Serial...",                  IDM_NEWSVAR
+            MENUITEM "&Date...",                    IDM_NEWDVAR
+            MENUITEM "&Time...",                    IDM_NEWTVAR
+            MENUITEM "&Based Serial...",            IDM_NEWBASEDVAR
+        END
+        POPUP "&Mark"
+        BEGIN
+            POPUP "&Device"
+            BEGIN
+                MENUITEM "&Text",                       IDM_NEWTEXTMARK
+                MENUITEM "&Multiline",                  IDM_NEWMULTILINEMARK
+                MENUITEM "&Barcode",                    IDM_NEWDEVBCMARK
+                MENUITEM "&Symbol",                     IDM_NEWDEVSYMMARK
+                MENUITEM "&Compound",                   IDM_NEWCDEVMARK
+            END
+            POPUP "Bar&Code"
+            BEGIN
+                MENUITEM "Code &2of5",                  IDM_NEWC2OF5MARK
+                MENUITEM "Code &39",                    IDM_NEWC39MARK
+                MENUITEM "Code &93",                    IDM_NEWC93MARK
+                MENUITEM "Code &128",                   IDM_NEWC128MARK
+                MENUITEM "&UPC/EAN",                    IDM_NEWCUPCEANMARK
+            END
+            POPUP "&2D Code"
+            BEGIN
+                MENUITEM "&Data Matrix",                IDM_NEWCDMMARK
+                MENUITEM "&UID-Mil Std 130",            IDM_NEWUIDMARK
+                MENUITEM "&QR Code",                    IDM_NEWCQRMARK
+            END
+            MENUITEM "&Bitmap",                     IDM_NEWBITMAPMARK
+            MENUITEM "&Windows Font",               IDM_NEWWINFONTMARK
+            MENUITEM "&Patch",                      IDM_NEWPATCHMARK
+            MENUITEM "&Matrix",                     IDM_NEWWMTRXMARK
+        END
+        MENUITEM "Header &Attribute",           IDM_NEWUDHA
+        MENUITEM "&Cure Step",                  IDM_NEWCURESTEP
+    END
+    POPUP "A&lign"
+    BEGIN
+        MENUITEM "&Edit/Add...",                IDM_EDITAE
+        MENUITEM "&Delete...",                  IDM_DELETEAE
+    END
+    POPUP "&Correction"
+    BEGIN
+        MENUITEM "&Edit...",                    IDM_EDITIMC
+        MENUITEM "&Clear...",                   IDM_DELETEIMC
+    END
+    MENUITEM "&Cal",                        IDM_CAL
+    MENUITEM "\a&About",                    IDM_ABOUT
+    POPUP "&Setting"
+    BEGIN
+        POPUP "&UID Settings..."
+        BEGIN
+            MENUITEM "UID Format 06 Settings...",   IDM_CUID06
+            MENUITEM "UID Format 05 Settings...",   IDM_CUID05
+            MENUITEM "UID Format 12 Settings...",   IDM_CUID12
+            MENUITEM "UID Settings...",             IDM_CUIDALL
+        END
+    END
+    POPUP "N&otes"
+    BEGIN
+        MENUITEM "&Notes",                      IDM_NEWNOTES
+        POPUP "&Procedure"
+        BEGIN
+            MENUITEM "&Add Procedure",              IDM_APROCEDURE
+            MENUITEM "&Open Procedure",             IDM_OPROCEDURE
+        END
+    END
+END
+
+IMFEDIT MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Save\tCtrl+S",               IDM_SAVE
+        MENUITEM "Save &As...",                 IDM_SAVEAS
+        MENUITEM "&Quit\tCtrl+BkSpace",         IDM_QUIT
+        MENUITEM SEPARATOR
+        MENUITEM "S&hell",                      IDM_SHELL
+        MENUITEM "&Print ON",                   IDM_PRINTON
+        MENUITEM "Sh&utdown",                   IDM_SHUTDOWN
+        MENUITEM "&Clean",                      IDM_CLEAN
+    END
+    POPUP "A&lign"
+    BEGIN
+        MENUITEM "&Edit/Add...",                IDM_EDITAE
+        MENUITEM "&Delete...",                  IDM_DELETEAE
+    END
+    MENUITEM "&Cal",                        IDM_CAL
+    MENUITEM "\a&About",                    IDM_ABOUT
+END
+
+RUN1 MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Quit\tCtrl+BkSpace",         IDM_QUIT
+        MENUITEM SEPARATOR
+        POPUP "&Inkjet"
+        BEGIN
+            MENUITEM "&Print ON",                   IDM_PRINTON
+            MENUITEM "Sh&utdown",                   IDM_SHUTDOWN
+            MENUITEM "&Clean",                      IDM_CLEAN
+        END
+    END
+    MENUITEM "&Cal",                        IDM_CAL
+    MENUITEM "\a&About",                    IDM_ABOUT
+    POPUP "N&otes"
+    BEGIN
+        MENUITEM "&Notes",                      IDM_NEWNOTES
+        POPUP "&Procedure"
+        BEGIN
+            MENUITEM "&Open Procedure",             IDM_OPROCEDURE
+        END
+    END
+END
+
+RUN2 MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Quit\tCtrl+BkSpace",         IDM_QUIT
+        MENUITEM SEPARATOR
+        MENUITEM "S&hell",                      IDM_SHELL
+        POPUP "&Inkjet"
+        BEGIN
+            MENUITEM "&Print ON",                   IDM_PRINTON
+            MENUITEM "Sh&utdown",                   IDM_SHUTDOWN
+            MENUITEM "&Clean",                      IDM_CLEAN
+        END
+    END
+    POPUP "&Mode"
+    BEGIN
+        MENUITEM "Stop on Fails",               IDM_STOPONFAIL
+        MENUITEM "No &Link",                    IDM_SUPPRESSLINK
+        MENUITEM "No LinkAuto&Start",           IDM_SUPPRESSLINKAUTOSTART
+        MENUITEM "No &ConveyorStart",           IDM_SUPPRESSCONVEYOR
+        MENUITEM "No &Increment",               IDM_SUPPRESSINCREMENT
+        MENUITEM "No &Alignment",               IDM_SUPPRESSALIGN
+    END
+    MENUITEM "&Cal",                        IDM_CAL
+    MENUITEM "\a&About",                    IDM_ABOUT
+    POPUP "&Notes"
+    BEGIN
+        MENUITEM "&Notes",                      IDM_NEWNOTES
+        POPUP "&Procedure"
+        BEGIN
+            MENUITEM "&Open Procedure",             IDM_OPROCEDURE
+        END
+    END
+END
+
+DDERUN MENU
+BEGIN
+    MENUITEM "&Quit",                       IDM_QUIT
+    MENUITEM "\a&About",                    IDM_ABOUT
+END
+
+CDEVEDIT MENU
+BEGIN
+    POPUP "&Insert"
+    BEGIN
+        POPUP "&Device"
+        BEGIN
+            MENUITEM "&Text",                       IDM_NEWTEXTMARK
+            MENUITEM "&Barcode",                    IDM_NEWDEVBCMARK
+        END
+        POPUP "Bar&Code"
+        BEGIN
+            MENUITEM "Code &2of5",                  IDM_NEWC2OF5MARK
+            MENUITEM "Code &39",                    IDM_NEWC39MARK
+            MENUITEM "Code &93",                    IDM_NEWC93MARK
+            MENUITEM "Code &128",                   IDM_NEWC128MARK
+            MENUITEM "&UPC/EAN",                    IDM_NEWCUPCEANMARK
+        END
+        POPUP "&2D Code"
+        BEGIN
+            MENUITEM "&Data Matrix",                IDM_NEWCDMMARK
+            MENUITEM "&UID-Mil Std 130",            IDM_NEWUIDMARK
+            MENUITEM "&QR Code",                    IDM_NEWCQRMARK
+        END
+        MENUITEM "&Bitmap",                     IDM_NEWBITMAPMARK
+        MENUITEM "&Windows Font",               IDM_NEWWINFONTMARK
+        MENUITEM "&Patch",                      IDM_NEWPATCHMARK
+        MENUITEM "&Matrix",                     IDM_NEWWMTRXMARK
+    END
+    MENUITEM "&Edit!",                      IDM_EDITCDEVBLOCK
+    MENUITEM "&Delete!",                    IDM_DELCDEVBLOCK
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ABOUT DIALOGEX 32, 32, 158, 151
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "Inkjet Marking System 5000",-1,0,8,162,8,NOT WS_GROUP
+    CTEXT           "Windows 7- Rotery Edition",-2,0,20,162,8,NOT WS_GROUP
+    CTEXT           "",IDC_VERSION,-3,32,162,8,NOT WS_GROUP
+    CTEXT           "Copyright © 2004-2017",-1,0,44,162,8,NOT WS_GROUP
+    CTEXT           "JETEC Corporation",-1,0,56,162,8,NOT WS_GROUP
+    ICON            "IMS",IDC_APPICON,8,8,20,20
+    CTEXT           "",IDC_LICENSEE,0,80,156,8,NOT WS_GROUP
+    CTEXT           "",IDC_SN,0,68,156,8,NOT WS_GROUP
+    CTEXT           "",IDC_IMVERSION,0,92,156,8,NOT WS_GROUP
+    CTEXT           "",IDC_IMAPIVER,0,104,156,8,NOT WS_GROUP
+    CTEXT           "",IDC_IMLICEXP,0,116,156,8,NOT WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,60,128,40,16
+END
+
+FIXTUREFILE DIALOG 32, 32, 152, 44
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+    COMBOBOX        IDC_FIXTUREFILE,8,8,136,46,CBS_DROPDOWN | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",1,8,24,40,14
+    PUSHBUTTON      "Search",IDC_SEARCHFILE,53,24,40,14
+    PUSHBUTTON      "Cancel",2,98,24,40,14
+END
+
+FIXTUREFILEB DIALOG 32, 32, 152, 44
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+    COMBOBOX        IDC_FIXTUREFILE,8,8,136,46,CBS_DROPDOWN | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",1,8,24,40,14
+    PUSHBUTTON      "Cancel",2,98,24,40,14
+END
+
+OPPROCEDURE DIALOG 32, 32, 152, 44
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+    COMBOBOX        IDC_LINKDISPLAY,8,8,136,46,CBS_DROPDOWN | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",1,8,24,40,14
+    PUSHBUTTON      "Cancel",2,98,24,40,14
+END
+
+ADPROCEDURE DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Link"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,159,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,159,50,14
+    PUSHBUTTON      "Browse",IDC_BROWSELINK,152,159,49,14
+    EDITTEXT        IDC_EDIT1LINK,97,47,188,15,ES_AUTOHSCROLL
+    LTEXT           "Enter Link ",IDC_STATIC,19,47,70,15
+END
+
+PROMPT DIALOG 32, 32, 152, 44
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+    EDITTEXT        IDC_EDIT,8,8,136,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",1,8,24,48,14
+    PUSHBUTTON      "Cancel",2,96,24,48,14
+END
+
+PROMPTO DIALOG 32, 32, 152, 44
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+    LTEXT           "&w",-1,8,9,5,8
+    EDITTEXT        IDC_EDITX,15,8,40,12,ES_AUTOHSCROLL
+    LTEXT           "&x",-1,75,9,5,8
+    EDITTEXT        IDC_EDITY,82,8,40,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",1,8,24,48,14
+    PUSHBUTTON      "Cancel",2,96,24,48,14
+END
+
+PROMPTH DIALOG 32, 32, 152, 44
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+   
+    LTEXT           "&Diameter",-1,8,9,5,8
+    EDITTEXT        IDC_EDITDIA,15,8,40,12,ES_AUTOHSCROLL
+    LTEXT           "&Height",-1,75,9,5,8
+    EDITTEXT        IDC_EDITHIG,82,8,40,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",1,8,24,48,14
+    PUSHBUTTON      "Cancel",2,96,24,48,14
+END
+
+PROMPTP DIALOG 32, 32, 200, 44
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+    LTEXT           "&Length",-1,5,9,22,8
+    EDITTEXT        IDC_EDITL,29,8,33,12,ES_AUTOHSCROLL
+    LTEXT           "&Width",-1,70,9,22,8
+    EDITTEXT        IDC_EDITW,92,8,33,12,ES_AUTOHSCROLL
+    LTEXT           "&Height",-1,131,9,22,8
+    EDITTEXT        IDC_EDITH,154,8,33,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",1,15,24,48,14
+    PUSHBUTTON      "Cancel",2,137,24,48,14
+END
+
+FILESERINPUT DIALOG 6, 18, 360, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+    LTEXT           "&Filename",-1,16,8,52,8
+    EDITTEXT        IDC_FILENAME,16,20,68,12,ES_AUTOHSCROLL
+    LTEXT           "&Lot Number",-1,16,40,48,8
+    EDITTEXT        IDC_NAME,16,52,132,12,ES_AUTOHSCROLL
+    LTEXT           "&Ser Number",-1,16,72,48,8
+    EDITTEXT        IDC_DESC,16,84,132,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Please scan part number into Filename box.",-1,20,130,200,20
+    DEFPUSHBUTTON   "Launch",IDOK,20,176,52,20
+    PUSHBUTTON      "Quit",IDC_QUITPG,88,176,52,20
+    PUSHBUTTON      "Exit",IDC_EXITPG,156,176,52,20
+    PUSHBUTTON      "Cancel",IDCANCEL,224,176,52,20
+END
+
+FILENAMEDESC DIALOG 6, 18, 160, 100
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Filename",-1,16,8,52,8
+    EDITTEXT        IDC_FILENAME,16,20,68,12,ES_AUTOHSCROLL
+    LTEXT           "&Description",-1,16,40,48,8
+    EDITTEXT        IDC_DESC,16,52,132,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,20,76,52,20
+    PUSHBUTTON      "Cancel",IDCANCEL,88,76,52,20
+END
+
+RESOLVEFILENAME DIALOG 6, 18, 170, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Resolve Multiple Filenames"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "More than one file matches the description:",-1,4,4,152,8
+    LTEXT           "DESCRIPTION",IDC_DESC,12,16,152,8
+    LTEXT           "Please select one from the following list.",-1,4,28,144,8
+    LISTBOX         IDC_FNLIST,4,40,68,76,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,104,76,44,16
+    PUSHBUTTON      "Cancel",IDCANCEL,104,100,44,16
+END
+
+KVAREDIT DIALOG 32, 32, 180, 138
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Keyed Variable"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&Name",-1,12,4,60,10,NOT WS_GROUP
+    CONTROL         "",IDC_NAME,"kedit",WS_BORDER | WS_TABSTOP | 0x80,12,14,100,12
+    LTEXT           "&Width",-1,12,26,32,10,NOT WS_GROUP
+    CONTROL         "",IDC_WIDTH,"sedit",WS_BORDER | WS_TABSTOP,12,36,46,13
+    CONTROL         "&Unique",IDC_UNIQUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,31,40,10
+    GROUPBOX        "Valid &Characters",-1,12,52,156,54
+    CONTROL         "0..9",IDC_DIGITS,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,16,62,28,12
+    CONTROL         "a..z",IDC_LOWERS,"Button",BS_AUTOCHECKBOX,88,62,28,12
+    CONTROL         "space",IDC_SPACE,"Button",BS_AUTOCHECKBOX,16,76,40,12
+    CONTROL         "A..Z",IDC_UPPERS,"Button",BS_AUTOCHECKBOX,88,78,28,12
+    CONTROL         "! "" # $ % & ' ( ) * + ,- . / : ; < = > ? @ [ \\ ] ^ `|~",IDC_OTHERS,
+                    "Button",BS_AUTOCHECKBOX,16,90,148,12
+    DEFPUSHBUTTON   "OK",IDOK,16,114,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,116,114,50,14
+    CONTROL         "&Global",IDC_GLOBAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,3,40,10
+END
+
+SVAREDIT DIALOG 32, 32, 180, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Serial Number"
+BEGIN
+    LTEXT           "&Name",-1,12,4,60,10,NOT WS_GROUP
+    CONTROL         "",IDC_NAME,"kedit",WS_BORDER | WS_TABSTOP | 0x80,12,14,100,12
+    LTEXT           "&Width",-1,12,28,32,10,NOT WS_GROUP
+    CONTROL         "",IDC_WIDTH,"SEDIT",WS_BORDER | WS_TABSTOP,12,36,32,12
+    CONTROL         "Leading &Zeros",IDC_ZEROS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,68,28,64,10
+    CONTROL         "&Unique",IDC_UNIQUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,68,39,40,10
+    LTEXT           "M&inimum",-1,12,52,36,8,NOT WS_GROUP
+    CONTROL         "",IDC_MIN,"SEDIT",WS_BORDER | WS_TABSTOP,12,60,40,12
+    LTEXT           "Ma&ximum",-1,68,52,36,8,NOT WS_GROUP
+    CONTROL         "",IDC_MAX,"SEDIT",WS_BORDER | WS_TABSTOP,68,60,40,12
+    CONTROL         "&Loop",IDC_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,120,60,28,12
+    LTEXT           "&Step",-1,12,76,32,8,NOT WS_GROUP
+    CONTROL         "",IDC_STEP,"SEDIT",WS_BORDER | WS_TABSTOP,12,84,40,12
+    CONTROL         "Count &Down",IDC_DOWN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,84,52,12
+    LTEXT           "R&epeats",-1,120,76,36,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"SEDIT",WS_BORDER | WS_TABSTOP,120,84,20,12
+    DEFPUSHBUTTON   "OK",IDOK,16,114,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,116,114,50,14
+    CONTROL         "&Global",IDC_GLOBAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,3,40,10
+END
+
+DATEVAREDIT DIALOG 32, 32, 184, 112
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Date"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Name",-1,12,4,60,8,NOT WS_GROUP
+    EDITTEXT        IDC_NAME,12,12,100,12,ES_AUTOHSCROLL
+    LTEXT           "&Format",105,12,28,36,8
+    EDITTEXT        IDC_FORMAT,12,36,120,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Hints",IDC_HINTS,136,36,28,12
+    GROUPBOX        "&Offset",-1,12,52,98,36
+    LTEXT           "days",-1,16,64,20,8,NOT WS_GROUP
+    EDITTEXT        IDC_DAYSOFFSET,16,72,32,12,ES_AUTOHSCROLL
+    LTEXT           "hours",-1,52,64,20,8
+    EDITTEXT        IDC_HOURSOFFSET,52,72,20,12,ES_AUTOHSCROLL
+    CONTROL         "&Retro",IDC_RETRO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,76,76,30,10
+    LTEXT           "&Base",-1,116,52,20,10,NOT WS_GROUP
+    COMBOBOX        IDC_BASE,116,62,60,46,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Allow Override",IDC_CANOVERRIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,116,76,60,12
+    DEFPUSHBUTTON   "OK",IDOK,16,92,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,116,92,50,14
+    CONTROL         "&Global",IDC_GLOBAL,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,140,3,40,10
+END
+
+TIMEVAREDIT DIALOG 32, 12, 229, 133
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Time"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&Name",-1,12,2,60,9,NOT WS_GROUP
+    EDITTEXT        IDC_NAME,12,12,100,12,ES_AUTOHSCROLL
+    CONTROL         "&Use Time Names",IDC_USENAMES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,26,68,10
+    GROUPBOX        "&Format",101,12,36,193,36
+    CONTROL         "2&4 hour",IDC_IS24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,45,40,10
+    CONTROL         "Show &Seconds",IDC_SHOWSECONDS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,64,45,64,10
+    CONTROL         "&Leading Zero",IDC_ISLZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,45,56,10
+    LTEXT           "A&M Suffix:",-1,24,58,34,8
+    EDITTEXT        IDC_AMSUFFIX,60,56,20,12,ES_AUTOHSCROLL
+    LTEXT           "&PM Suffix:",-1,84,58,34,8
+    EDITTEXT        IDC_PMSUFFIX,120,56,20,12,ES_AUTOHSCROLL
+    LTEXT           "S&eperator:",-1,144,58,36,8
+    EDITTEXT        IDC_SEPERATOR,180,56,18,12,ES_AUTOHSCROLL
+    GROUPBOX        "&Offset",-1,12,72,128,36
+    LTEXT           "hours",-1,16,84,20,8
+    EDITTEXT        IDC_HOURSOFFSET,16,92,20,12,ES_AUTOHSCROLL
+    LTEXT           "minutes",-1,43,84,28,8
+    EDITTEXT        IDC_MINUTESOFFSET,43,92,20,12,ES_AUTOHSCROLL
+    LTEXT           "seconds",-1,72,84,32,8
+    EDITTEXT        IDC_SECONDSOFFSET,72,92,20,12,ES_AUTOHSCROLL
+    CONTROL         "&Retro",IDC_RETRO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,96,37,10
+    LTEXT           "&Base",-1,144,74,32,10,NOT WS_GROUP
+    COMBOBOX        IDC_BASE,144,84,60,46,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Allow Override",IDC_CANOVERRIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,97,60,12
+    DEFPUSHBUTTON   "OK",IDOK,16,112,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,152,112,50,14
+    CONTROL         "&Global",IDC_GLOBAL,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,156,10,40,10
+END
+
+BASEDVAREDIT DIALOG 32, 32, 164, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Based Serial Variable"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Name",-1,12,4,60,10,NOT WS_GROUP
+    CONTROL         "",IDC_NAME,"kedit",WS_BORDER | WS_TABSTOP | 0x80,12,14,100,12
+    LTEXT           "&Width",-1,12,26,32,10,NOT WS_GROUP
+    CONTROL         "",IDC_WIDTH,"SEDIT",WS_BORDER | WS_TABSTOP,12,36,32,12
+    LTEXT           "&Base",-1,49,26,32,10,NOT WS_GROUP
+    COMBOBOX        IDC_BASE,49,36,53,46,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Loop",IDC_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,28,40,10
+    CONTROL         "&Unique",IDC_UNIQUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,39,40,10
+    DEFPUSHBUTTON   "OK",IDOK,20,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,92,60,50,14
+    CONTROL         "&Global",IDC_GLOBAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,4,34,10
+END
+
+TEXTMARKEDIT DIALOG 21, 32, 248, 121
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Text Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,32,12
+	
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+    //CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Font",-1,4,28,16,8,NOT WS_GROUP
+    COMBOBOX        IDC_FONTS,4,36,112,80,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Justification",IDC_JUSTLBL,4,48,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,56,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Char &Width",-1,56,48,39,8,NOT WS_GROUP
+    CONTROL         "",IDC_WIDTH,"fedit",WS_BORDER | WS_TABSTOP,56,56,32,12
+    LTEXT           "Char &Height",-1,96,48,39,8,NOT WS_GROUP
+    CONTROL         "",IDC_HEIGHT,"fedit",WS_BORDER | WS_TABSTOP,96,56,32,12
+    LTEXT           "&Ms",IDC_MSLBL,144,48,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,144,56,12,12
+    LTEXT           "&Rep",IDC_REPLBL,162,48,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,161,56,11,12
+    CONTROL         "&Upsidedown",IDC_YFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,53,52,10
+    CONTROL         "&Backwards",IDC_XFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,65,48,10
+    LTEXT           "&Text (press <ins> for inserts)",-1,4,72,128,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,4,80,220,12
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,96,48,16
+    PUSHBUTTON      "OK",IDOK,120,96,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,176,96,48,16
+END
+
+DEVBCMARKEDIT DIALOG 32, 32, 216, 121
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Barcode Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+   // CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Font",-1,4,28,16,8,NOT WS_GROUP
+    COMBOBOX        IDC_FONTS,4,36,112,80,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Justification",IDC_JUSTLBL,4,48,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,56,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Char &Width",-1,56,48,39,8,NOT WS_GROUP
+    CONTROL         "",IDC_WIDTH,"fedit",WS_BORDER | WS_TABSTOP,56,56,32,12
+    LTEXT           "Char &Height",-1,104,48,39,8,NOT WS_GROUP
+    CONTROL         "",IDC_HEIGHT,"fedit",WS_BORDER | WS_TABSTOP,104,56,32,12
+    LTEXT           "&Ms",IDC_MSLBL,156,48,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,156,56,11,12
+    LTEXT           "&Rep",IDC_REPLBL,172,48,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,172,56,11,12
+    LTEXT           "&Text (press <ins> for inserts)",-1,4,72,128,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,4,80,208,12
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,96,48,16
+    PUSHBUTTON      "OK",IDOK,112,96,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,164,96,48,16
+END
+
+C2OF5MARKEDIT DIALOG 32, 32, 196, 185
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Code 2of5 Barcode Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+//	LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+  //  CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,28,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,36,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,48,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,48,36,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,84,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,84,36,32,12
+    LTEXT           "X &Dots",IDC_XDOTSLBL,128,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,128,36,16,12
+    LTEXT           "Y &Dots",IDC_YDOTSLBL,164,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YDOTS,"sedit",WS_BORDER | WS_TABSTOP,164,36,16,12
+    LTEXT           "&Quiet Zone",-1,4,52,40,8,NOT WS_GROUP
+    CONTROL         "",IDC_QZONE,"sedit",WS_BORDER | WS_TABSTOP,4,60,16,12
+    LTEXT           "&Ms",IDC_MSLBL,44,52,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,44,60,12,12
+    LTEXT           "&Rep",IDC_REPLBL,59,52,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,59,60,11,12
+    CONTROL         "&Negative",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,76,52,40,12
+    CONTROL         "&Guard Bars",IDC_BBARS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,124,52,60,12
+    CONTROL         "&Interleave",IDC_INTERLEAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,76,64,44,12
+    CONTROL         "Add &Checksum",IDC_ADDSUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,124,64,60,12
+    LTEXT           "&Text (press <ins> for inserts)",-1,5,78,128,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,4,86,176,12
+    GROUPBOX        "&Human Readable Overlay",-1,4,105,175,46,WS_GROUP
+    CONTROL         "None",IDC_HROVERLAY,"Button",BS_AUTORADIOBUTTON,14,114,34,10
+    CONTROL         "Top",IDC_HROVERLAY1,"Button",BS_AUTORADIOBUTTON,71,114,34,10
+    CONTROL         "Bottom",IDC_HROVERLAY2,"Button",BS_AUTORADIOBUTTON,125,114,34,10
+    LTEXT           "Format",-1,13,125,48,8,NOT WS_GROUP
+    CONTROL         "",IDC_HRPICT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,13,133,155,12
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,160,48,16
+    PUSHBUTTON      "OK",IDOK,76,160,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,128,160,48,16
+END
+
+C39MARKEDIT DIALOG 32, 32, 186, 185
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Code39 Barcode Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+//	LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+  //  CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,28,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,36,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,48,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,48,36,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,84,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,84,36,32,12
+    LTEXT           "X &Dots",IDC_XDOTSLBL,128,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,128,36,16,12
+    LTEXT           "Y &Dots",IDC_YDOTSLBL,160,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YDOTS,"sedit",WS_BORDER | WS_TABSTOP,160,36,16,12
+    LTEXT           "&Quiet Zone",-1,4,52,40,8,NOT WS_GROUP
+    CONTROL         "",IDC_QZONE,"sedit",WS_BORDER | WS_TABSTOP,4,60,16,12
+    LTEXT           "&Ms",IDC_MSLBL,44,52,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,44,60,11,12
+    LTEXT           "&Rep",IDC_REPLBL,60,52,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,60,60,11,12
+    CONTROL         "&Negative",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,82,52,40,12
+    CONTROL         "Full &ASCII",IDC_FA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,52,40,12
+    CONTROL         "Add &Checksum",IDC_ADDSUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,82,64,60,12
+    LTEXT           "&Text (press <ins> for inserts)",-1,5,78,128,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,4,86,172,12
+    GROUPBOX        "&Human Readable Overlay",-1,4,105,172,46,WS_GROUP
+    CONTROL         "None",IDC_HROVERLAY,"Button",BS_AUTORADIOBUTTON,14,114,34,10
+    CONTROL         "Top",IDC_HROVERLAY1,"Button",BS_AUTORADIOBUTTON,71,114,34,10
+    CONTROL         "Bottom",IDC_HROVERLAY2,"Button",BS_AUTORADIOBUTTON,125,114,34,10
+    LTEXT           "Format",-1,13,125,48,8,NOT WS_GROUP
+    CONTROL         "",IDC_HRPICT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,13,133,155,12
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,160,48,16
+    PUSHBUTTON      "OK",IDOK,76,160,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,128,160,48,16
+END
+
+C128MARKEDIT DIALOG 32, 32, 190, 206
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Code128 Barcode Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+//	LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+  //  CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,28,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,36,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,4,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,4,56,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,40,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,40,56,32,12
+    LTEXT           "X &Dots",IDC_XDOTSLBL,84,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,84,56,16,12
+    LTEXT           "Y &Dots",IDC_YDOTSLBL,116,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YDOTS,"sedit",WS_BORDER | WS_TABSTOP,116,56,16,12
+    LTEXT           "&Quiet Zone",-1,4,72,40,8,NOT WS_GROUP
+    CONTROL         "",IDC_QZONE,"sedit",WS_BORDER | WS_TABSTOP,4,80,16,12
+    LTEXT           "&Ms",IDC_MSLBL,44,72,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,44,80,12,12
+    LTEXT           "&Rep",IDC_REPLBL,60,72,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,60,80,12,12
+    CONTROL         "&Negative",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,79,40,12
+    LTEXT           "&Set",-1,125,72,16,8,NOT WS_GROUP
+    COMBOBOX        IDC_C128CSET,125,80,48,47,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Text (press <ins> for inserts)",-1,5,98,128,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,4,106,168,12
+    GROUPBOX        "&Human Readable Overlay",-1,4,125,168,46,WS_GROUP
+    CONTROL         "None",IDC_HROVERLAY,"Button",BS_AUTORADIOBUTTON,14,134,34,10
+    CONTROL         "Top",IDC_HROVERLAY1,"Button",BS_AUTORADIOBUTTON,71,134,34,10
+    CONTROL         "Bottom",IDC_HROVERLAY2,"Button",BS_AUTORADIOBUTTON,125,134,34,10
+    LTEXT           "Format",-1,13,145,48,8,NOT WS_GROUP
+    CONTROL         "",IDC_HRPICT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,13,153,139,12
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,180,48,16
+    PUSHBUTTON      "OK",IDOK,64,180,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,116,180,48,16
+END
+
+CUPCEANMARKEDIT DIALOG 32, 13, 190, 162
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UPC/EAN Barcode Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,0,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,8,32,12
+    LTEXT           "&X",IDC_YLBL,40,0,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,8,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,0,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,8,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,0,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,8,28,12
+
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+  //  CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,24,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,32,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Subtype",-1,52,24,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_SUBTYPE,52,32,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,4,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,4,56,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,40,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,40,56,32,12
+    LTEXT           "X &Dots",IDC_XDOTSLBL,87,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,87,56,16,12
+    LTEXT           "Y &Dots",IDC_YDOTSLBL,116,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YDOTS,"sedit",WS_BORDER | WS_TABSTOP,116,56,16,12
+    LTEXT           "&Quiet Zone",-1,4,72,40,8,NOT WS_GROUP
+    CONTROL         "",IDC_QZONE,"sedit",WS_BORDER | WS_TABSTOP,4,80,16,12
+    LTEXT           "&Ms",IDC_MSLBL,44,72,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,44,80,12,12
+    LTEXT           "&Rep",IDC_REPLBL,59,72,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,59,80,13,12
+    CONTROL         "&Negative",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,79,40,12
+    LTEXT           "Human Readable &Format",-1,5,96,99,8,NOT WS_GROUP
+    CONTROL         "",IDC_HRPICT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,5,104,99,12
+    CONTROL         "&Overlay HR",IDC_HROVERLAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,105,50,10
+    LTEXT           "&Text (press <ins> for inserts)",-1,5,118,128,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,5,126,179,12
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,140,48,16
+    PUSHBUTTON      "OK",IDOK,84,140,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,136,140,48,16
+END
+
+C93MARKEDIT DIALOG 32, 32, 182, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Code93 Barcode Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+  //  CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,28,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,36,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,4,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,4,56,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,40,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,40,56,32,12
+    LTEXT           "X &Dots",IDC_XDOTSLBL,84,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,84,56,16,12
+    LTEXT           "Y &Dots",IDC_YDOTSLBL,116,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YDOTS,"sedit",WS_BORDER | WS_TABSTOP,116,56,16,12
+    LTEXT           "&Quiet Zone",-1,4,72,40,8,NOT WS_GROUP
+    CONTROL         "",IDC_QZONE,"sedit",WS_BORDER | WS_TABSTOP,4,80,16,12
+    LTEXT           "&Ms",IDC_MSLBL,44,72,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,44,80,12,12
+    LTEXT           "&Rep",IDC_REPLBL,59,72,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,59,80,12,12
+    CONTROL         "&Negative",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,88,76,40,12
+    LTEXT           "&Text (press <ins> for inserts)",-1,4,96,128,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,4,104,172,12
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,120,48,16
+    PUSHBUTTON      "OK",IDOK,76,120,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,128,120,48,16
+END
+
+CDMMARKEDIT DIALOG 0, 0, 204, 173
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Data Matrix Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+   // CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,28,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,36,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,52,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,52,36,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,88,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,88,36,32,12
+    CONTROL         "&Neg",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,34,23,12
+    CONTROL         "X &Flip",IDC_XFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,28,31,12
+    CONTROL         "Y &Flip",IDC_YFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,38,31,12
+    LTEXT           "&Cols",-1,4,52,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DMCOLS,"sedit",WS_BORDER | WS_TABSTOP,4,60,16,12
+    LTEXT           "&Rows",-1,24,52,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DMROWS,"sedit",WS_BORDER | WS_TABSTOP,24,60,16,12
+    LTEXT           "XY &Dots",IDC_XYDOTSLBL,48,52,44,8,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,48,60,16,12
+    CONTROL         "",IDC_YDOTS,"sedit",WS_BORDER | WS_TABSTOP,68,60,16,12
+    LTEXT           "XY &Quiet Zone",-1,92,52,52,8,NOT WS_GROUP
+    CONTROL         "",IDC_XQZ,"sedit",WS_BORDER | WS_TABSTOP,92,60,16,12
+    CONTROL         "",IDC_YQZ,"sedit",WS_BORDER | WS_TABSTOP,112,60,16,12
+    LTEXT           "&Ms",IDC_MSLBL,144,52,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,144,60,12,12
+    LTEXT           "&Rep",IDC_REPLBL,159,52,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,159,60,12,12
+    LTEXT           "&Format",-1,4,76,28,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMFORMAT,4,84,60,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&ECC",-1,68,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMECC,68,84,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Style",-1,112,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMSTYLE,112,84,56,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Border",-1,172,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMBORDER,172,84,24,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Text (<ctrl+enter> for new line: <ins> for inserts)",-1,4,100,158,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x1004,4,108,192,28
+    PUSHBUTTON      "&Locate",IDC_LOCATE,3,148,48,16
+    PUSHBUTTON      "OK",IDOK,103,148,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,153,148,48,16
+END
+
+UIDMARKEDIT DIALOG 0, 0, 204, 303
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UID Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    LTEXT           "Mil-Std 130 REV ",IDC_SSTARTX,145,4,55,10
+    PUSHBUTTON      "N",IDC_UIDREV,165,12,10,10
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+   // CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,28,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,36,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,52,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,52,36,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,88,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,88,36,32,12
+    CONTROL         "&Neg",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,34,23,12
+    CONTROL         "X &Flip",IDC_XFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,28,31,12
+    CONTROL         "Y &Flip",IDC_YFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,38,31,12
+    LTEXT           "&Cols",-1,4,52,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DMCOLS,"sedit",WS_BORDER | WS_TABSTOP,4,60,16,12
+    LTEXT           "&Rows",-1,24,52,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DMROWS,"sedit",WS_BORDER | WS_TABSTOP,24,60,16,12
+    LTEXT           "XY &Dots",IDC_XYDOTSLBL,48,52,44,8,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,48,60,16,12
+    CONTROL         "",IDC_YDOTS,"sedit",WS_BORDER | WS_TABSTOP,68,60,16,12
+    LTEXT           "XY &Quiet Zone",-1,92,52,52,8,NOT WS_GROUP
+    CONTROL         "",IDC_XQZ,"sedit",WS_BORDER | WS_TABSTOP,92,60,16,12
+    CONTROL         "",IDC_YQZ,"sedit",WS_BORDER | WS_TABSTOP,112,60,16,12
+    LTEXT           "&Ms",IDC_MSLBL,144,52,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,144,60,12,12
+    LTEXT           "&Rep",IDC_REPLBL,159,52,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,159,60,12,12
+    LTEXT           "&Format",-1,4,76,28,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMFORMAT,4,84,60,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&ECC",-1,68,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMECC,68,84,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Style",-1,112,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMSTYLE,112,84,56,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Border",-1,172,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMBORDER,172,84,24,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "",IDC_BEGIN,4,100,40,8,NOT WS_GROUP
+    LTEXT           "",IDC_UIDFORMAT,45,100,25,8,NOT WS_GROUP
+    LTEXT           "&Enterprise Identifier",-1,40,110,100,8,NOT WS_GROUP
+    LTEXT           "",IDC_ENTERID,22,120,18,8,NOT WS_GROUP
+    CONTROL         "",IDC_ENTERIDv,"kedit",WS_BORDER | WS_TABSTOP | 0x1004,40,120,156,12
+    LTEXT           "&Original Part Number",-1,40,130,100,8,NOT WS_GROUP
+    LTEXT           "",IDC_PARTN,22,140,18,8,NOT WS_GROUP
+    CONTROL         "",IDC_PARTNv,"kedit",WS_BORDER | WS_TABSTOP | 0x1004,40,140,156,12
+	LTEXT           "&Serial Number",-1,40,150,100,8,NOT WS_GROUP
+    LTEXT           "",IDC_PIN,22,160,18,8,NOT WS_GROUP
+    CONTROL         "",IDC_PINv,"kedit",WS_BORDER | WS_TABSTOP | 0x1004,40,160,156,12
+
+    LTEXT           "&RsEOT",-1,173,200,23,8,NOT WS_GROUP
+    LTEXT           "",IDC_WEXT,4,210,192,28,NOT WS_GROUP
+    PUSHBUTTON      "&Locate",IDC_LOCATE,2,284,36,16
+    PUSHBUTTON      "Hint",IDC_HINTDMM,42,284,36,16
+    PUSHBUTTON      "Preview",IDC_PRE,82,284,36,16
+    PUSHBUTTON      "OK",IDOK,122,284,36,16
+    PUSHBUTTON      "Cancel",IDCANCEL,162,284,36,16
+END
+
+UID06CON1EDIT DIALOG 0, 0, 204, 303
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UID Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    LTEXT           "Mil-Std 130 REV ",IDC_SSTARTX,145,4,55,10
+    PUSHBUTTON      "N",IDC_UIDREV,165,12,10,10
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+   // CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,28,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,36,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,52,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,52,36,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,88,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,88,36,32,12
+    CONTROL         "&Neg",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,28,31,12
+    CONTROL         "&Rect",IDC_RECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,38,31,12
+    CONTROL         "X &Flip",IDC_XFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,28,31,12
+    CONTROL         "Y &Flip",IDC_YFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,38,31,12
+    LTEXT           "&Cols",-1,4,52,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DMCOLS,"sedit",WS_DISABLED | WS_BORDER | WS_TABSTOP,4,60,16,12
+    LTEXT           "&Rows",-1,24,52,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DMROWS,"sedit",WS_DISABLED | WS_BORDER | WS_TABSTOP,24,60,16,12
+    LTEXT           "XY &Dots",IDC_XYDOTSLBL,48,52,44,8,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,48,60,16,12
+    CONTROL         "",IDC_YDOTS,"sedit",WS_BORDER | WS_TABSTOP,68,60,16,12
+    LTEXT           "XY &Quiet Zone",-1,92,52,52,8,NOT WS_GROUP
+    CONTROL         "",IDC_XQZ,"sedit",WS_BORDER | WS_TABSTOP,92,60,16,12
+    CONTROL         "",IDC_YQZ,"sedit",WS_BORDER | WS_TABSTOP,112,60,16,12
+    LTEXT           "&Ms",IDC_MSLBL,144,52,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,144,60,12,12
+    LTEXT           "&Rep",IDC_REPLBL,159,52,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,159,60,12,12
+    LTEXT           "&Format",-1,4,76,28,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMFORMAT,4,84,60,36,CBS_DROPDOWNLIST | WS_DISABLED | WS_TABSTOP
+    LTEXT           "&ECC",-1,68,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMECC,68,84,40,36,CBS_DROPDOWNLIST | WS_DISABLED | WS_TABSTOP
+    LTEXT           "&Style",-1,112,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMSTYLE,112,84,56,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Border",-1,172,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMBORDER,172,84,24,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "",IDC_BEGIN,4,100,40,8,NOT WS_GROUP
+    LTEXT           "",IDC_UIDFORMAT,45,100,25,8,WS_DISABLED | NOT WS_GROUP
+    LTEXT           "&Construct:",-1,4,110,40,8,NOT WS_GROUP
+    LTEXT           "",IDC_UIICON,45,110,40,8,WS_DISABLED | NOT WS_GROUP
+    LTEXT           "",IDC_UID06CON1FIRST,40,120,150,8,NOT WS_GROUP
+    LTEXT           "",IDC_ENTERID,22,130,18,8,WS_DISABLED | NOT WS_GROUP
+    CONTROL         "",IDC_ENTERIDv,"kedit",WS_BORDER | WS_TABSTOP | 0x1084,40,130,156,12
+    LTEXT           "",IDC_UID06CON1SECOND,40,140,150,8,NOT WS_GROUP
+    LTEXT           "",IDC_PARTN,22,150,18,8,WS_DISABLED | NOT WS_GROUP
+    CONTROL         "",IDC_PARTNv,"kedit",WS_BORDER | WS_TABSTOP | 0x1084,40,150,156,12
+    CONTROL         "",IDC_WEXT,"kedit",WS_DISABLED | WS_BORDER | WS_TABSTOP | 0x1004,4,210,192,28
+    PUSHBUTTON      "&Locate",IDC_LOCATE,2,284,36,16
+    PUSHBUTTON      "Hint",IDC_HINTDMM,42,284,36,16
+    PUSHBUTTON      "Preview",IDC_PRE,82,284,36,16
+    PUSHBUTTON      "OK",IDOK,122,284,36,16
+    PUSHBUTTON      "Cancel",IDCANCEL,162,284,36,16
+END
+
+UID06CON2EDIT DIALOG 0, 0, 204, 303
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UID Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    LTEXT           "Mil-Std 130 REV ",IDC_SSTARTX,145,4,55,10
+    PUSHBUTTON      "N",IDC_UIDREV,165,12,10,10
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+   // CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,28,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,36,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,52,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,52,36,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,88,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,88,36,32,12
+    CONTROL         "&Neg",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,28,31,12
+    CONTROL         "&Rect",IDC_RECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,38,31,12
+    CONTROL         "X &Flip",IDC_XFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,28,31,12
+    CONTROL         "Y &Flip",IDC_YFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,38,31,12
+    LTEXT           "&Cols",-1,4,52,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DMCOLS,"sedit",WS_DISABLED | WS_BORDER | WS_TABSTOP,4,60,16,12
+    LTEXT           "&Rows",-1,24,52,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DMROWS,"sedit",WS_DISABLED | WS_BORDER | WS_TABSTOP,24,60,16,12
+    LTEXT           "XY &Dots",IDC_XYDOTSLBL,48,52,44,8,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,48,60,16,12
+    CONTROL         "",IDC_YDOTS,"sedit",WS_BORDER | WS_TABSTOP,68,60,16,12
+    LTEXT           "XY &Quiet Zone",-1,92,52,52,8,NOT WS_GROUP
+    CONTROL         "",IDC_XQZ,"sedit",WS_BORDER | WS_TABSTOP,92,60,16,12
+    CONTROL         "",IDC_YQZ,"sedit",WS_BORDER | WS_TABSTOP,112,60,16,12
+    LTEXT           "&Ms",IDC_MSLBL,144,52,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,144,60,12,12
+    LTEXT           "&Rep",IDC_REPLBL,159,52,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,159,60,12,12
+    LTEXT           "&Format",-1,4,76,28,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMFORMAT,4,84,60,36,CBS_DROPDOWNLIST | WS_DISABLED | WS_TABSTOP
+    LTEXT           "&ECC",-1,68,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMECC,68,84,40,36,CBS_DROPDOWNLIST | WS_DISABLED | WS_TABSTOP
+    LTEXT           "&Style",-1,112,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMSTYLE,112,84,56,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Border",-1,172,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMBORDER,172,84,24,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "",IDC_BEGIN,4,100,40,8,NOT WS_GROUP
+    LTEXT           "",IDC_UIDFORMAT,45,100,25,8,WS_DISABLED | NOT WS_GROUP
+    LTEXT           "&Construct:",-1,4,110,40,8,NOT WS_GROUP
+    LTEXT           "",IDC_UIICON,45,110,40,8,WS_DISABLED | NOT WS_GROUP
+    LTEXT           "&Enterprise Identifier",-1,40,120,100,8,NOT WS_GROUP
+    LTEXT           "",IDC_ENTERID,22,130,18,8,WS_DISABLED | NOT WS_GROUP
+    CONTROL         "",IDC_ENTERIDv,"kedit",WS_BORDER | WS_TABSTOP | 0x1004,40,130,156,12
+    LTEXT           "&Original Part Number or Lot/Batch Number",-1,40,140,100,8,NOT WS_GROUP
+    LTEXT           "",IDC_PARTN,22,150,18,8,WS_DISABLED | NOT WS_GROUP
+    CONTROL         "",IDC_PARTNv,"kedit",WS_BORDER | WS_TABSTOP | 0x1004,40,150,156,12
+    
+	LTEXT           "&Serial Number",-1,40,160,150,8,NOT WS_GROUP
+    LTEXT           "",IDC_PIN,22,170,18,8,WS_DISABLED | NOT WS_GROUP
+    CONTROL         "",IDC_PINv,"kedit",WS_BORDER | WS_TABSTOP | 0x1004,40,170,156,12
+    
+	CONTROL         "",IDC_WEXT,"kedit",WS_DISABLED | WS_BORDER | WS_TABSTOP | 0x1004,4,210,192,28
+    PUSHBUTTON      "&Locate",IDC_LOCATE,2,284,36,16
+    PUSHBUTTON      "Hint",IDC_HINTDMM,42,284,36,16
+    PUSHBUTTON      "Preview",IDC_PRE,82,284,36,16
+    PUSHBUTTON      "OK",IDOK,122,284,36,16
+    PUSHBUTTON      "Cancel",IDCANCEL,162,284,36,16
+END
+
+UID05EDIT DIALOG 0, 0, 204, 303
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UID Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    LTEXT           "Mil-Std 130 REV ",IDC_SSTARTX,145,4,55,10
+    PUSHBUTTON      "N",IDC_UIDREV,165,12,10,10
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+   // CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,28,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,36,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,52,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,52,36,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,88,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,88,36,32,12
+    CONTROL         "&Neg",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,28,31,12
+    CONTROL         "&Rect",IDC_RECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,38,31,12
+    CONTROL         "X &Flip",IDC_XFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,28,31,12
+    CONTROL         "Y &Flip",IDC_YFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,38,31,12
+    LTEXT           "&Cols",-1,4,52,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DMCOLS,"sedit",WS_DISABLED | WS_BORDER | WS_TABSTOP,4,60,16,12
+    LTEXT           "&Rows",-1,24,52,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_DMROWS,"sedit",WS_DISABLED | WS_BORDER | WS_TABSTOP,24,60,16,12
+    LTEXT           "XY &Dots",IDC_XYDOTSLBL,48,52,44,8,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,48,60,16,12
+    CONTROL         "",IDC_YDOTS,"sedit",WS_BORDER | WS_TABSTOP,68,60,16,12
+    LTEXT           "XY &Quiet Zone",-1,92,52,52,8,NOT WS_GROUP
+    CONTROL         "",IDC_XQZ,"sedit",WS_BORDER | WS_TABSTOP,92,60,16,12
+    CONTROL         "",IDC_YQZ,"sedit",WS_BORDER | WS_TABSTOP,112,60,16,12
+    LTEXT           "&Ms",IDC_MSLBL,144,52,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,144,60,12,12
+    LTEXT           "&Rep",IDC_REPLBL,159,52,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,159,60,12,12
+    LTEXT           "&Format",-1,4,76,28,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMFORMAT,4,84,60,36,CBS_DROPDOWNLIST | WS_DISABLED | WS_TABSTOP
+    LTEXT           "&ECC",-1,68,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMECC,68,84,40,36,CBS_DROPDOWNLIST | WS_DISABLED | WS_TABSTOP
+    LTEXT           "&Style",-1,112,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMSTYLE,112,84,56,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Border",-1,172,76,24,8,NOT WS_GROUP
+    COMBOBOX        IDC_DMBORDER,172,84,24,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "",IDC_BEGIN,4,100,40,8,NOT WS_GROUP
+    LTEXT           "",IDC_UIDFORMAT,45,100,25,8,WS_DISABLED | NOT WS_GROUP
+    LTEXT           "&Construct:",-1,4,110,40,8,NOT WS_GROUP
+    LTEXT           "",IDC_UIICON,45,110,40,8,WS_DISABLED | NOT WS_GROUP
+    LTEXT           "&UII",-1,40,120,100,8,NOT WS_GROUP
+    LTEXT           "",IDC_LOTBN,22,130,18,8,WS_DISABLED | NOT WS_GROUP
+    CONTROL         "",IDC_LOTBNv,"kedit",WS_BORDER | WS_TABSTOP | 0x1004,40,130,156,12
+    LTEXT           "&Enterprise Identifier",-1,40,140,100,8,NOT WS_GROUP
+    LTEXT           "",IDC_ENTERID,22,150,18,8,WS_DISABLED | NOT WS_GROUP
+    CONTROL         "",IDC_ENTERIDv,"kedit",WS_BORDER | WS_TABSTOP | 0x1004,40,150,156,12
+    LTEXT           "&Part Number",-1,40,160,100,8,NOT WS_GROUP
+    LTEXT           "",IDC_PIN,22,170,18,8,WS_DISABLED | NOT WS_GROUP
+    CONTROL         "",IDC_PINv,"kedit",WS_BORDER | WS_TABSTOP | 0x1004,40,170,156,12
+    LTEXT           "&Serial Number",-1,40,180,150,8,NOT WS_GROUP
+    LTEXT           "",IDC_PARTN,22,190,18,8,WS_DISABLED | NOT WS_GROUP
+    CONTROL         "",IDC_PARTNv,"kedit",WS_BORDER | WS_TABSTOP | 0x80,40,190,156,12
+    CONTROL         "",IDC_WEXT,"kedit",WS_DISABLED | WS_BORDER | WS_TABSTOP | 0x1004,4,210,192,28
+    PUSHBUTTON      "&Locate",IDC_LOCATE,2,284,36,16
+    PUSHBUTTON      "Hint",IDC_HINTDMM,42,284,36,16
+    PUSHBUTTON      "Preview",IDC_PRE,82,284,36,16
+    PUSHBUTTON      "OK",IDOK,122,284,36,16
+    PUSHBUTTON      "Cancel",IDCANCEL,162,284,36,16
+END
+
+WINFONTMARKEDIT DIALOG 0, 0, 257, 213
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Windows Font Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,64,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,72,32,12
+    LTEXT           "&X",IDC_YLBL,40,64,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,72,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,64,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,72,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,64,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,72,28,12
+
+//	LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+  //  CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,88,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,96,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,52,88,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,52,96,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,88,88,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,88,96,32,12
+    PUSHBUTTON      "&Font",IDC_FONT,12,115,40,14
+    LTEXT           "Arial",IDC_FONTDESC,56,119,46,8
+    LTEXT           "&Ms",IDC_MSLBL,103,108,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,103,116,12,12
+    LTEXT           "&Rep",IDC_REPLBL,118,108,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,118,116,12,12
+    CONTROL         "&Neg",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,134,117,23,12
+    LTEXT           "&Expand",-1,166,108,28,8
+    COMBOBOX        IDC_SEF,166,116,26,60,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Y&Inc",-1,196,108,28,8
+    COMBOBOX        IDC_YINCM,196,116,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Y&Ofs",-1,226,108,28,8
+    COMBOBOX        IDC_YORGM,226,116,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Text (<ctrl+enter> for new line: <ins> for inserts)",-1,4,131,158,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x1084,4,139,247,48
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,192,48,16
+    PUSHBUTTON      "OK",IDOK,136,192,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,196,192,48,16
+END
+
+WMTRXMARKEDIT DIALOGEX 0, 0, 302, 230
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_OVERLAPPEDWINDOW
+CAPTION "Matrix Mark"
+FONT 8, "System", 0, 0, 0x0
+BEGIN
+    LTEXT           "&W",IDC_XLBL,8,5,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,6,11,32,12
+    LTEXT           "&Y",IDC_YLBL,42,3,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,42,11,32,12
+    LTEXT           "&Z",IDC_ZLBL,78,3,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,78,11,32,12
+    LTEXT           "&X",IDC_ROTLBL,114,3,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,114,11,28,12
+
+//	LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+ //   CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,8,23,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,8,35,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,54,27,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,50,35,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,90,27,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,90,35,32,12
+    LTEXT           "&Ms",IDC_MSLBL,124,27,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,124,35,12,12
+    LTEXT           "&Rep",IDC_REPLBL,139,27,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,139,35,12,12
+    CONTROL         "&Neg",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,36,23,12
+    LTEXT           "XSize",-1,27,55,28,8
+    LTEXT           "YSize",-1,57,55,28,8
+    LTEXT           "XOrg",-1,87,55,28,8
+    LTEXT           "YOrg",-1,117,55,28,8
+    LTEXT           "SRC",-1,9,67,18,8
+    COMBOBOX        IDC_MTRX_SRC_XS,27,67,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_MTRX_SRC_YS,57,67,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "cr",-1,146,67,12,8
+    LTEXT           "SUB",-1,9,79,18,8
+    COMBOBOX        IDC_MTRX_SUB_XS,27,79,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_MTRX_SUB_YS,57,79,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_MTRX_SUB_XO,87,79,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_MTRX_SUB_YO,117,79,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "cr",-1,146,79,12,8
+    LTEXT           "CEL",-1,9,91,18,8
+    COMBOBOX        IDC_MTRX_CEL_XS,27,91,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_MTRX_CEL_YS,57,91,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "px",-1,146,91,12,8
+    LTEXT           "DOT",-1,9,103,18,8
+    COMBOBOX        IDC_MTRX_DOT_XS,27,103,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_MTRX_DOT_YS,57,103,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_MTRX_MAT_XO,87,103,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_MTRX_MAT_YO,117,103,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "px",-1,146,103,12,8
+    CONTROL         "&Hex",IDC_HEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,118,23,12
+    CONTROL         "Roun&d",IDC_MTRX_ROUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,118,34,12
+    PUSHBUTTON      "&Font",IDC_FONT,86,118,40,14
+    LTEXT           "Arial",IDC_FONTDESC,130,122,46,8
+    LTEXT           "&Data: <ins> for inserts)",-1,4,131,82,12,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x1084,3,141,181,12
+    CONTROL         "Bottom",IDC_MTRX_CHB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,114,150,33,12
+    LTEXT           "&Col Headings (, delimited)",-1,4,152,100,12,NOT WS_GROUP
+    CONTROL         "",IDC_CHTEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x1084,3,162,150,12
+    LTEXT           "ORG",-1,159,152,18,8
+    COMBOBOX        IDC_MTRX_CH_XO,159,162,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_MTRX_CH_YO,186,162,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    CONTROL         "Right",IDC_MTRX_RHR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,114,172,33,12
+    LTEXT           "&Row Headings (, delimited)",-1,4,174,100,12,NOT WS_GROUP
+    CONTROL         "",IDC_RHTEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x1084,3,184,150,12
+    LTEXT           "ORG",-1,159,174,18,8
+    COMBOBOX        IDC_MTRX_RH_XO,159,184,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_MTRX_RH_YO,186,184,26,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    PUSHBUTTON      "&Locate",IDC_LOCATE,6,204,48,16
+    PUSHBUTTON      "OK",IDOK,86,204,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,136,204,48,16
+END
+
+CQRMARKEDIT DIALOG 0, 0, 204, 173
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "QR Code Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+   // CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+
+    LTEXT           "&PixRot",-1,142,4,28,8,NOT WS_GROUP
+    COMBOBOX        IDC_QRROT,142,12,36,72,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,52,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,52,36,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,88,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,88,36,32,12
+    CONTROL         "&Neg",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,34,23,12
+    CONTROL         "X &Flip",IDC_XFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,28,31,12
+    CONTROL         "Y &Flip",IDC_YFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,38,31,12
+    LTEXT           "XY &Dots",IDC_XYDOTSLBL,48,52,44,8,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,48,60,16,12
+    CONTROL         "",IDC_YDOTS,"sedit",WS_BORDER | WS_TABSTOP,68,60,16,12
+    LTEXT           "XY &Quiet Zone",-1,92,52,52,8,NOT WS_GROUP
+    CONTROL         "",IDC_XQZ,"sedit",WS_BORDER | WS_TABSTOP,92,60,16,12
+    CONTROL         "",IDC_YQZ,"sedit",WS_BORDER | WS_TABSTOP,112,60,16,12
+    LTEXT           "&Ms",IDC_MSLBL,144,52,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,144,60,12,12
+    LTEXT           "&Rep",IDC_REPLBL,159,52,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,159,60,12,12
+    LTEXT           "&Encoding",-1,4,76,54,8,NOT WS_GROUP
+    COMBOBOX        IDC_QRENC,4,84,54,72,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Correction",-1,60,76,36,8,NOT WS_GROUP
+    COMBOBOX        IDC_QRCOR,60,84,36,72,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Symbol &Ver",-1,98,76,54,8,NOT WS_GROUP
+    COMBOBOX        IDC_QRVER,98,84,36,72,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Text (<ctrl+enter> for new line: <ins> for inserts)",-1,4,100,158,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x1004,4,108,192,28
+    PUSHBUTTON      "&Locate",IDC_LOCATE,3,148,48,16
+    PUSHBUTTON      "OK",IDOK,103,148,48,16
+
+    PUSHBUTTON      "Cancel",IDCANCEL,153,148,48,16
+END
+
+PATCHMARKEDIT DIALOG 0, 0, 182, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Patch Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+   // CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,28,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,36,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,52,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,52,36,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,88,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,88,36,32,12
+    LTEXT           "&X Size",IDC_XSIZELBL,4,48,32,8,NOT WS_GROUP
+    CONTROL         "",IDC_XSIZE,"sedit",WS_BORDER | WS_TABSTOP,4,56,32,12
+    LTEXT           "&Y Size",IDC_YSIZELBL,40,48,32,8,NOT WS_GROUP
+    CONTROL         "",IDC_YSIZE,"sedit",WS_BORDER | WS_TABSTOP,40,56,32,12
+    LTEXT           "&Ms",IDC_MSLBL,87,48,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,87,56,13,12
+    LTEXT           "&Rep",IDC_REPLBL,103,48,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,103,56,12,12
+    CONTROL         "&Neg",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,123,56,28,12
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,80,36,16
+    PUSHBUTTON      "OK",IDOK,76,80,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,128,80,48,16
+END
+
+BITMAPMARKEDIT DIALOG 48, 32, 382, 205
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bitmap Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+//	LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+  //  CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Justification",IDC_JUSTLBL,4,28,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,36,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,48,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,48,36,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,84,28,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,84,36,32,12
+    LTEXT           "&Ms",IDC_MSLBL,124,28,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,124,36,13,12
+    LTEXT           "&Rep",IDC_REPLBL,140,28,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,140,36,11,12
+    CONTROL         "&Neg",IDC_NEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,154,37,24,12
+    LTEXT           "&Filename (press <ins> for inserts)",-1,4,52,115,8,NOT WS_GROUP
+    CONTROL         "",IDC_FN,"kedit",WS_BORDER | WS_TABSTOP,4,60,172,12
+    PUSHBUTTON      "&Locate",IDC_LOCATE,2,80,43,16
+    PUSHBUTTON      "Open File",IDC_BITMAPFILE,92,80,43,16
+    PUSHBUTTON      "Search File",IDC_SEARCHFILE,137,80,43,16
+    PUSHBUTTON      "OK",IDOK,92,100,43,16
+    PUSHBUTTON      "Cancel",IDCANCEL,137,100,43,16
+    CONTROL         "STATIC",IDC_IMAGE,"Static",SS_BITMAP | SS_REALSIZEIMAGE | WS_GROUP,189,4,190,190
+END
+
+MULTILINEMARKEDIT DIALOG 21, 32, 236, 165
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Multiline Mark"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+//	LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+ //   CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Font",-1,4,28,16,8,NOT WS_GROUP
+    COMBOBOX        IDC_FONTS,4,36,112,80,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Justification",IDC_JUSTLBL,4,48,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,56,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Cell &Width",-1,56,48,39,8,NOT WS_GROUP
+    CONTROL         "",IDC_WIDTH,"fedit",WS_BORDER | WS_TABSTOP,56,56,32,12
+    LTEXT           "Cell &Height",-1,104,48,39,8,NOT WS_GROUP
+    CONTROL         "",IDC_HEIGHT,"fedit",WS_BORDER | WS_TABSTOP,104,56,32,12
+    LTEXT           "&Ms",IDC_MSLBL,148,48,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,148,56,11,12
+    LTEXT           "&Rep",IDC_REPLBL,164,48,13,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,164,56,11,12
+    CONTROL         "&Upsidedown",IDC_YFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,180,52,52,10
+    CONTROL         "&Backwards",IDC_XFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,180,64,48,10
+    LTEXT           "&Text (<ctrl+enter> for new line: <ins> for inserts)",-1,4,72,158,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x1084,4,80,208,48
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,136,48,16
+    PUSHBUTTON      "OK",IDOK,120,136,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,176,136,48,16
+END
+
+CURESTEPEDIT DIALOG 0, 0, 182, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cure Step"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+   // CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+
+
+    LTEXT           "&XSize",-1,4,28,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_XSIZE,"fedit",WS_BORDER | WS_TABSTOP,4,36,32,12
+    LTEXT           "&Vel",-1,40,28,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_VEL,"fedit",WS_BORDER | WS_TABSTOP,40,36,32,12
+    LTEXT           "&Rep",IDC_REPLBL,76,28,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,76,36,13,12
+    CONTROL         "&Keep cure on",IDC_KEEPON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,36,60,10
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,52,36,16
+    PUSHBUTTON      "OK",IDOK,76,52,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,128,52,48,16
+END
+
+CDEVMARKEDIT DIALOG 21, 32, 236, 157
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Compound Mark"
+MENU CDEVEDIT
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,4,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,4,12,32,12
+    LTEXT           "&X",IDC_YLBL,40,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,40,12,32,12
+    LTEXT           "&Z",IDC_ZLBL,76,4,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,76,12,32,12
+    LTEXT           "&ROT",IDC_ROTLBL,112,4,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,12,28,12
+
+	//LTEXT           "&Deg",IDC_DEGLBL,144,4,28,8,NOT WS_GROUP   //  deg
+   // CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,12,32,12
+    
+	LTEXT           "&Skew",IDC_SLANTLBL,180,4,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,180,12,32,12
+    LTEXT           "&Format",-1,4,28,32,8,NOT WS_GROUP
+    COMBOBOX        IDC_BFI,4,36,112,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "0/0 buffers used",IDC_BUFSTAT,124,36,56,8
+    LTEXT           "&Justification",IDC_JUSTLBL,4,48,44,8,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,4,56,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "X &Res",IDC_XRESLBL,56,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_XRES,"fedit",WS_BORDER | WS_TABSTOP,56,56,32,12
+    LTEXT           "Y &Res",IDC_YRESLBL,104,48,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_YRES,"fedit",WS_BORDER | WS_TABSTOP,104,56,32,12
+    LTEXT           "&Ms",IDC_MSLBL,148,48,12,8,NOT WS_GROUP
+    CONTROL         "",IDC_MULTISTROKE,"sedit",WS_BORDER | WS_TABSTOP,148,56,12,12
+    LTEXT           "&Rep",IDC_REPLBL,163,48,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,163,56,11,12
+    CONTROL         "&Upsidedown",IDC_YFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,180,52,52,10
+    CONTROL         "&Backwards",IDC_XFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,180,64,48,10
+    CONTROL         "",IDC_CDEVVIEW,"CDEVVIEW",WS_BORDER | WS_HSCROLL | WS_TABSTOP,4,76,224,52
+    PUSHBUTTON      "&Locate",IDC_LOCATE,4,136,48,16
+    PUSHBUTTON      "OK",IDOK,120,136,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,176,136,48,16
+END
+
+TXTCDEVEDIT DIALOG 21, 32, 226, 121
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Text"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&Font",-1,8,8,16,8,NOT WS_GROUP
+    COMBOBOX        IDC_FONTS,8,16,112,80,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Text (<ctrl+enter> for new line: <ins> for inserts)",-1,8,32,158,8,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x4,8,40,208,48
+    PUSHBUTTON      "OK",IDOK,112,96,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,168,96,48,16
+END
+
+KVALEDIT DIALOG 32, 32, 218, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+    LTEXT           "&Value",-1,4,0,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_EDIT,"kedit",WS_BORDER | WS_TABSTOP,4,8,210,12
+    DEFPUSHBUTTON   "OK",1,4,28,44,16
+    PUSHBUTTON      "Cancel",2,56,28,44,16
+END
+
+SVALEDIT DIALOG 32, 32, 124, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+    LTEXT           "&Value",-1,4,0,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_EDIT,"sedit",WS_BORDER | WS_TABSTOP,4,8,48,12
+    LTEXT           "&Repeat",-1,68,0,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,68,8,32,12
+    DEFPUSHBUTTON   "OK",1,4,28,44,16
+    PUSHBUTTON      "Cancel",2,76,28,44,16
+END
+
+DATEVALEDIT DIALOG 32, 32, 128, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+    CONTROL         "&Override",IDC_OVERRIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,0,40,10
+    EDITTEXT        IDC_VALUE,8,12,112,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,8,28,44,16
+    PUSHBUTTON      "Cancel",IDCANCEL,56,28,44,16
+END
+
+TIMEVALEDIT DIALOG 32, 32, 128, 48
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "System"
+BEGIN
+    CONTROL         "&Override",IDC_OVERRIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,0,40,10
+    EDITTEXT        IDC_VALUE,8,12,112,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,8,28,44,16
+    PUSHBUTTON      "Cancel",IDCANCEL,56,28,44,16
+END
+
+BASEDVALEDIT DIALOG 32, 32, 132, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+    LTEXT           "&Value",-1,4,0,24,8,NOT WS_GROUP
+    CONTROL         "",IDC_EDIT,"kedit",WS_BORDER | WS_TABSTOP,4,8,124,12
+    DEFPUSHBUTTON   "OK",IDOK,4,28,44,16
+    PUSHBUTTON      "Cancel",IDCANCEL,56,28,44,16
+END
+
+UDHAEDIT DIALOG 6, 18, 174, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Header Attribute"
+BEGIN
+    RTEXT           "&Name",102,0,16,32,8
+    EDITTEXT        IDC_NAME,40,14,124,12,ES_AUTOHSCROLL
+    RTEXT           "&Value",103,4,36,28,8
+    EDITTEXT        IDC_VALUE,40,34,124,12,ES_AUTOHSCROLL
+    CONTROL         "&Runtime Edit",IDC_REDIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,54,56,10
+    CONTROL         "&Include in new programs",IDC_INCLUDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,76,54,96,10
+    PUSHBUTTON      "OK",IDOK,24,74,48,16
+    PUSHBUTTON      "Cancel",IDCANCEL,100,74,48,16
+END
+
+USERS DIALOG 32, 32, 216, 152
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Users"
+BEGIN
+    CONTROL         "",IDC_LISTBOX,"xlistbox",WS_BORDER | WS_VSCROLL | WS_TABSTOP | 0x2,4,4,208,96
+    PUSHBUTTON      "&Add",IDC_ADDUSER,8,104,48,16
+    PUSHBUTTON      "&Edit",IDC_EDITUSER,84,104,48,16
+    PUSHBUTTON      "&Delete",IDC_DELUSER,160,104,48,16
+    DEFPUSHBUTTON   "OK",IDOK,84,132,48,16
+END
+
+USER DIALOG 32, 32, 188, 136
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "User"
+BEGIN
+    LTEXT           "&ID:",-1,8,8,12,12,NOT WS_GROUP
+    CONTROL         "",IDC_USERID,"kedit",WS_BORDER | WS_TABSTOP,20,8,40,12
+    LTEXT           "&Name:",-1,68,8,24,12,NOT WS_GROUP
+    CONTROL         "",IDC_USERNAME,"kedit",WS_BORDER | WS_TABSTOP | 0x80,92,8,84,12
+    LTEXT           "&Password:",-1,8,52,36,12,NOT WS_GROUP
+    CONTROL         "",IDC_PASSWORD,"kedit",WS_BORDER | WS_TABSTOP | 0x20,44,52,32,12
+    GROUPBOX        "&Level",-1,92,28,88,76
+    RADIOBUTTON     "0",IDC_USERLEVEL0,100,40,76,12,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "1",IDC_USERLEVEL1,100,52,76,12
+    RADIOBUTTON     "2",IDC_USERLEVEL2,100,64,76,12
+    RADIOBUTTON     "3",IDC_USERLEVEL3,100,76,76,12
+    RADIOBUTTON     "4",IDC_USERLEVEL4,100,88,76,12
+    DEFPUSHBUTTON   "OK",IDOK,28,112,48,18,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,112,112,48,18
+END
+
+GRID DIALOG 12, 20, 246, 159
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Insert Grid"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Order",107,8,8,32,8
+    EDITTEXT        IDC_GORDER,8,20,100,12,ES_AUTOHSCROLL
+    LTEXT           "&Origin",-1,8,36,64,8
+    EDITTEXT        IDC_GORG,8,48,100,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Locate",IDC_LOCATE,112,48,40,12
+    LTEXT           "Location Size",103,8,64,48,8
+    EDITTEXT        IDC_GNSIZE,8,76,100,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT,112,76,40,12,ES_AUTOHSCROLL
+    LTEXT           "&Rotation",IDC_ROTLBL,112,64,32,8
+    LTEXT           "Location Spacing",105,8,92,72,8
+    EDITTEXT        IDC_GNSPACING,8,104,100,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Locate",IDC_LOCSIZE,112,104,40,12
+    GROUPBOX        "&Sequence",101,168,16,68,72
+    CONTROL         "left to right",IDC_GLR,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,172,32,56,10
+    CONTROL         "right to left",IDC_GRL,"Button",BS_AUTORADIOBUTTON,172,44,48,10
+    CONTROL         "top to bottom",IDC_GTB,"Button",BS_AUTORADIOBUTTON,172,56,56,10
+    CONTROL         "bottom to top",IDC_GBT,"Button",BS_AUTORADIOBUTTON,172,68,60,10
+    PUSHBUTTON      "OK",IDOK,140,132,44,18
+    PUSHBUTTON      "Cancel",IDCANCEL,192,132,44,18
+END
+
+NEST DIALOG 12, 20, 190, 65
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Location"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&X",IDC_XLBL,8,8,8,8
+    EDITTEXT        IDC_X,8,20,32,12,ES_AUTOHSCROLL
+	LTEXT           "&D",IDC_DLBL,80,8,28,8
+    EDITTEXT        IDC_D,80,20,32,12,ES_AUTOHSCROLL
+    LTEXT           "&Y",IDC_YLBL,44,8,12,8
+    EDITTEXT        IDC_Y,44,20,32,12,ES_AUTOHSCROLL
+    LTEXT           "X Size",IDC_XSIZELBL,80,8,28,8
+    EDITTEXT        IDC_XSIZE,80,20,32,12,ES_AUTOHSCROLL
+    LTEXT           "Y Size",IDC_YSIZELBL,116,8,24,8
+    EDITTEXT        IDC_YSIZE,116,20,32,12,ES_AUTOHSCROLL
+    LTEXT           "&Rotation",IDC_ROTLBL,152,8,32,8
+    EDITTEXT        IDC_ROT,152,20,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Locate",IDC_LOCATE,8,36,44,18
+    PUSHBUTTON      "OK",IDOK,92,36,44,18
+    PUSHBUTTON      "Cancel",IDCANCEL,140,36,44,18
+END
+
+VISPOS DIALOG 32, 32, 152, 60
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "VIS Position"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT,8,8,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Jog",IDC_JOG,8,24,48,14,WS_DISABLED
+    PUSHBUTTON      "&Move",IDC_MOVE,96,24,48,14,WS_DISABLED
+    DEFPUSHBUTTON   "OK",1,8,40,48,14
+    PUSHBUTTON      "Cancel",2,96,40,48,14
+END
+
+AESETUP DIALOGEX 0, 0, 310, 262
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Alignment Extension"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Locator:",IDC_STATIC,5,2,27,8
+    EDITTEXT        IDC_LOCATOR,125,2,104,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    CTEXT           "Location",IDC_STATIC,107,22,37,8
+    EDITTEXT        IDC_LOCATEPREP1,109,32,35,12,ES_AUTOHSCROLL
+    GROUPBOX        "&Camera Locations",IDC_STATIC,40,73,228,64,0,WS_EX_STATICEDGE
+    RTEXT           "&Number of locations:",IDC_STATIC,44,85,72,8
+    COMBOBOX        IDC_NACQPOS,124,85,24,40,CBS_DROPDOWNLIST | WS_TABSTOP
+    RTEXT           "&A:",IDC_STATIC,48,101,12,8
+    EDITTEXT        IDC_ACQPOS0,68,101,104,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Move A",IDC_ACQMOVE0,189,101,34,13
+    PUSHBUTTON      "&Jog A",IDC_ACQJOG0,225,101,34,13
+    RTEXT           "&B:",IDC_STATIC,48,117,12,8
+    EDITTEXT        IDC_ACQPOS1,68,117,104,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Move B",IDC_ACQMOVE1,189,117,34,13
+    PUSHBUTTON      "&Jog B",IDC_ACQJOG1,225,117,34,13
+    GROUPBOX        "&Reference Locations",IDC_STATIC,40,142,228,64,0,WS_EX_STATICEDGE
+    RTEXT           "&Number of locations:",IDC_STATIC,44,154,72,8
+    COMBOBOX        IDC_NREFPOS,124,154,24,40,CBS_DROPDOWNLIST | WS_TABSTOP
+    PUSHBUTTON      "&Center Cam",IDC_COPYREFPOS2CAM,199,153,56,14
+    RTEXT           "&A:",IDC_STATIC,48,170,12,8
+    EDITTEXT        IDC_REFPOS0,68,170,110,12,ES_AUTOHSCROLL
+    RTEXT           "&B:",IDC_STATIC,48,186,12,8
+    EDITTEXT        IDC_REFPOS1,68,186,110,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Learn A",IDC_LEARNREFPOS0,199,170,56,13
+    RTEXT           "Max &Rotation:",IDC_STATIC,40,212,48,8
+    EDITTEXT        IDC_MAXROTATION,92,212,38,12,ES_AUTOHSCROLL
+    CONTROL         "No &X Rotation",IDC_MASKXROT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,136,212,60,10
+    CONTROL         "No &Y Rotation",IDC_MASKYROT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,200,212,60,10
+    RTEXT           "Max &Scale Error:",IDC_STATIC,32,228,56,8
+    EDITTEXT        IDC_MAXLENDELTA,92,228,38,12,ES_AUTOHSCROLL
+    CONTROL         "&Correct Scale on A instead of B",IDC_ADJUSTA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,136,228,120,10
+    DEFPUSHBUTTON   "&Close",IDCANCEL,258,245,48,14
+    COMBOBOX        IDC_cbLOCATOR2,34,49,70,42,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOCATEPREP2,109,49,35,12,ES_AUTOHSCROLL
+    RTEXT           "A:",IDC_STATIC,20,34,9,8
+    RTEXT           "B:",IDC_STATIC,20,50,9,8
+    GROUPBOX        "Camera Devices",IDC_STATIC,11,16,294,52,0,WS_EX_STATICEDGE
+    COMBOBOX        IDC_cbLOCATOR1,33,32,70,38,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_cbPROCTYPE1,150,32,150,50,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_cbPROCTYPE2,150,49,149,50,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Job",IDC_STATIC,216,22,21,8
+    PUSHBUTTON      "&Learn B",IDC_LEARNREFPOS1,199,186,56,13
+END
+
+CAL DIALOG 0, 0, 212, 143
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Calibration"
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "&Auto",IDC_AUTOCAL,12,8,30,14
+    RTEXT           "&Calibration:",-1,48,8,40,8
+    COMBOBOX        IDC_CALLIST,92,8,106,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Mark",IDC_CALMARK,164,36,36,12
+    PUSHBUTTON      "&Locate",IDC_LOCATE,164,64,36,12
+    PUSHBUTTON      "&Update",IDC_UPDATE,164,92,36,12
+    DEFPUSHBUTTON   "&Close",IDCANCEL,164,120,36,12
+    RTEXT           "Ideal:",-1,1,88,32,7
+    EDITTEXT        IDC_CALPOS,36,88,104,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    RTEXT           "Found:",-1,1,104,32,7
+    EDITTEXT        IDC_LOCPOS,36,104,104,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    RTEXT           "Delta:",-1,1,120,32,7
+    EDITTEXT        IDC_DELTAPOS,36,120,104,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "",IDC_CALINST,11,32,145,48
+END
+
+STDLOC DIALOG 0, 0, 148, 47
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Standard Locator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Location:",IDC_STDLOCPROMPT,4,4,140,12
+    EDITTEXT        IDC_STDLOCPOS,4,16,140,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "&Move",IDC_STDLOCMOVE,4,32,32,12
+    PUSHBUTTON      "&Locate",IDC_LOCATE,40,32,32,12
+    DEFPUSHBUTTON   "&OK",IDOK,76,32,32,12
+    PUSHBUTTON      "&Cancel",IDCANCEL,112,32,32,12
+END
+
+IMCORRECTION DIALOG 0, 0, 117, 104
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Mark Corrections"
+FONT 8, "System"
+BEGIN
+    GROUPBOX        "Forward",-1,4,4,109,36
+    LTEXT           "&X",-1,8,14,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_FXCOR,"fedit",WS_BORDER | WS_TABSTOP,8,24,32,12
+    LTEXT           "&Y",-1,42,14,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_FYCOR,"fedit",WS_BORDER | WS_TABSTOP,42,24,32,12
+    LTEXT           "&Skew",-1,76,14,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_FSCOR,"fedit",WS_BORDER | WS_TABSTOP,76,24,32,12
+    GROUPBOX        "Reverse",-1,4,44,109,36
+    LTEXT           "&X",-1,8,54,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_RXCOR,"fedit",WS_BORDER | WS_TABSTOP,8,64,32,12
+    LTEXT           "&Y",-1,42,54,16,8,NOT WS_GROUP
+    CONTROL         "",IDC_RYCOR,"fedit",WS_BORDER | WS_TABSTOP,42,64,32,12
+    LTEXT           "&Skew",-1,76,54,20,8,NOT WS_GROUP
+    CONTROL         "",IDC_RSCOR,"fedit",WS_BORDER | WS_TABSTOP,76,64,32,12
+    DEFPUSHBUTTON   "&OK",IDOK,26,85,32,12
+    PUSHBUTTON      "&Cancel",IDCANCEL,62,85,32,12
+END
+
+MARKING DIALOGEX 0, 0, 361, 201
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Starting Point",IDC_STATIC,7,7,174,52
+    LTEXT           "W",IDC_SSTARTX,15,20,8,8
+    EDITTEXT        IDC_ESTARTX,25,18,40,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_SSTARTY,69,20,8,8
+    EDITTEXT        IDC_ESTARTY,77,18,40,14,ES_AUTOHSCROLL
+    LTEXT           "Z",IDC_SSTARTZ,123,20,8,8
+    EDITTEXT        IDC_ESTARTZ,131,18,40,14,ES_AUTOHSCROLL
+    CONTROL         "Use x-coordinate only",IDC_CZONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,35,84,10
+    CONTROL         "Return to point of first mark",IDC_CRET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,47,101,10
+    LTEXT           "W",IDC_SREHOMEX,15,73,8,8
+    EDITTEXT        IDC_EREHOMEX,25,71,40,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_SREHOMEY,69,73,8,8
+    EDITTEXT        IDC_EREHOMEY,77,71,40,14,ES_AUTOHSCROLL
+    LTEXT           "Z",IDC_SREHOMEZ,123,73,8,8
+    EDITTEXT        IDC_EREHOMEZ,131,71,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Variables",IDC_STATIC,7,92,174,102
+    CONTROL         "Warn on blank variables",IDC_CVARWARN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,105,93,10
+    CONTROL         "Auto advance on edit",IDC_CVARADV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,118,84,10
+    CONTROL         "Propogate values",IDC_CVARPROP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,131,71,10
+    CONTROL         "Replace zeros",IDC_CVARREP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,144,61,10
+    LTEXT           "Edit Values On",IDC_STATIC,18,161,48,8
+    COMBOBOX        IDC_CBVARPOP,72,159,76,43,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EVARPOP,153,158,13,12,ES_AUTOHSCROLL
+    LTEXT           "Focus Variables",IDC_STATIC,18,179,51,8
+    COMBOBOX        IDC_CBVARFOC,72,177,97,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,0,HIDC_CBVARFOC
+    GROUPBOX        "Marker Units",IDC_STATIC,186,7,168,36
+    CONTROL         "Inches",IDC_RIN,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,197,22,37,10
+    CONTROL         "Centimeters",IDC_RCM,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,239,22,53,10
+    CONTROL         "Millimeters",IDC_RMM,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,297,22,48,10
+    GROUPBOX        "Run Settings",IDC_STATIC,186,48,168,59
+    CONTROL         "Enable quit button on stop",IDC_CRUNQUIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,198,63,99,10
+    CONTROL         "Enable pass/fail button on stop",IDC_CRUNPASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,198,76,114,10
+    CONTROL         "Pause after reads",IDC_CRUNPAUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,198,89,71,10
+    GROUPBOX        "History Queue",IDC_STATIC,186,110,168,44
+    LTEXT           "Queue Size",IDC_STATIC,197,123,38,8
+    EDITTEXT        IDC_EHSTSIZE,253,120,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Override Level",IDC_STATIC,197,139,47,8
+    COMBOBOX        IDC_CBHSTLEV,253,138,31,71,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Key",IDC_SVARPOP,153,146,13,8
+    GROUPBOX        "Fixture Options",IDC_STATIC,186,157,168,37
+    CONTROL         "Reference right edge",IDC_CREFRT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,168,83,10
+    CONTROL         "Reference bottom edge",IDC_CREFBT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,180,91,10
+    GROUPBOX        "Rehome Point",IDC_STATIC,7,61,174,28
+END
+
+UID06CON1 DIALOGEX 0, 0, 361, 201
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Part 1 - Single Element UIIs",IDC_STATIC,7,17,110,74
+    CONTROL         "Complete UII (25S)",IDC_CUII1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,30,80,10
+    CONTROL         "UII (18S)",IDC_UII1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,42,80,10
+    GROUPBOX        "Part 2",IDC_STATIC,118,17,110,74
+    CONTROL         "Current Part Number (30P)",IDC_PARTC1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,129,30,95,10
+    GROUPBOX        "Part 3",IDC_STATIC,229,17,110,74
+    LTEXT           "Notes: Must choose ONE from Part 1 and ONE from Part 2",IDC_STATIC,7,93,200,8,NOT WS_GROUP
+END
+
+UID06CON2 DIALOGEX 0, 0, 361, 201
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Part 1 - Enterprise Identifier",IDC_STATIC,7,17,110,74
+    CONTROL         "CAGE/NCAGE (17V)",IDC_CAGE1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,30,95,10
+    CONTROL         "D-U-N-S (12V)",IDC_DUNS1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,42,95,10
+    CONTROL         "GS1 Company Prefix (3V)",IDC_GS11,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,54,95,10
+    CONTROL         "DODAAC (7L)",IDC_DODAAC,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,66,95,10
+    CONTROL         "Other Agencies (18V)",IDC_OTHERA,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,78,95,10
+    GROUPBOX        "Part 2",IDC_STATIC,118,17,110,74
+    CONTROL         "Part Number (1P)",IDC_PARTS1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,129,30,95,10
+    CONTROL         "Lot/Batch Number (1T)",IDC_LOTB1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,129,42,95,10
+    GROUPBOX        "Part 3",IDC_STATIC,229,17,110,74
+    CONTROL         "Serial Number (S)",IDC_SNPI1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,240,30,95,10
+    LTEXT           "Notes: Must choose ONE from Part 1\n         Must choose ONE from Part 2\n         Must choose ONE from Part 3",IDC_STATIC,7,93,200,30,NOT WS_GROUP
+END
+
+UID05 DIALOGEX 0, 0, 361, 201
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "GIAI (8004)",IDC_GIAI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,30,95,10
+    CONTROL         "EID (95)",IDC_UIDF5EID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,42,95,10
+    CONTROL         "Part Number (240)",IDC_PARTC2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,54,95,10
+    CONTROL         "Serial No (21)",IDC_UIDF5SN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,66,95,10
+    LTEXT           "Notes: Must choose all opitions",-1,18,78,100,10,NOT WS_GROUP
+END
+
+UID12CON1 DIALOGEX 0, 0, 361, 201
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Part 1 - Enterprise Identifier",IDC_STATIC,7,17,110,74
+    CONTROL         "CAGE/NCAGE (MFR)",IDC_CAGE2,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,30,95,10
+    CONTROL         "CAGE/NCAGE (SPL)",IDC_CAGE3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,42,95,10
+    CONTROL         "CAGE/NCAGE (CAG)",IDC_CAGE4,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,54,95,10
+    CONTROL         "D-U-N-S (DUN)",IDC_DUNS2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,66,95,10
+    CONTROL         "GS1 C. PREFIX (EUC)",IDC_GS12,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,78,95,10
+    GROUPBOX        "Part 2-Serial N within EID",IDC_STATIC,118,17,110,74
+    CONTROL         "Serial N EID(SER)",IDC_SNEI1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,129,30,95,10
+    CONTROL         "Serial N EID(UCN)",IDC_SNEI2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,129,42,95,10
+    GROUPBOX        "Part 3",IDC_STATIC,229,17,110,74
+    LTEXT           "Notes: Must choose ONE from Part 1\n         Must choose ONE from Part 2.",IDC_STATIC,7,93,200,30,NOT WS_GROUP
+END
+
+UID12CON2 DIALOGEX 0, 0, 361, 201
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Part 1 - Enterprise Identifier",IDC_STATIC,7,17,110,74
+    CONTROL         "CAGE/NCAGE (MFR)",IDC_CAGE2,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,30,95,10
+    CONTROL         "CAGE/NCAGE (SPL)",IDC_CAGE3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,42,95,10
+    CONTROL         "CAGE/NCAGE (CAG)",IDC_CAGE4,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,54,95,10
+    CONTROL         "D-U-N-S (DUN)",IDC_DUNS2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,66,95,10
+    CONTROL         "GS1 C. PREFIX (EUC)",IDC_GS12,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,78,95,10
+    GROUPBOX        "Part 2",IDC_STATIC,118,17,110,74
+    CONTROL         "Part Number (PNO)",IDC_PARTS2,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,129,30,95,10
+    CONTROL         "Lot/Batch Number (LOT)",IDC_LOTB2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,129,42,95,10
+    CONTROL         "Lot/Batch Number (LTN)",IDC_LOTB3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,129,54,95,10
+    CONTROL         "Lot/Batch Number (BII)",IDC_LOTB4,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,129,66,95,10
+    GROUPBOX        "Part 3",IDC_STATIC,229,17,110,74
+    CONTROL         "Serial Number (SEQ)",IDC_SNPI2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,240,30,95,10
+    LTEXT           "Notes: Must choose ONE from Part 1\n         Must choose ONE from Part 2\n         Must choose ONE from Part 3",IDC_STATIC,7,93,200,30,NOT WS_GROUP
+END
+
+COLORS DIALOG 0, 0, 363, 201
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Fixture Display Options",IDC_STATIC,7,5,168,190
+    CONTROL         "Show referenced edge",IDC_CSHOWREF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,20,88,10
+    LTEXT           "Ref. Edge Color",IDC_SREF,15,74,54,9
+    LTEXT           "Fixture Color",IDC_STATIC,15,88,44,8
+    LTEXT           "No Part Color",IDC_STATIC,15,103,55,8
+    LTEXT           "Part Color",IDC_STATIC,15,118,56,9
+    LTEXT           "Started Part Color",IDC_STATIC,15,133,59,9
+    LTEXT           "Marked Part Color",IDC_STATIC,15,148,59,9
+    LTEXT           "Passed Part Color",IDC_STATIC,15,163,59,9
+    LTEXT           "Failed Part Color",IDC_STATIC,15,178,54,9
+    GROUPBOX        "Band Preview",IDC_STATIC,181,5,175,88
+    CONTROL         "Enable",IDC_CBPENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,190,20,38,10
+    GROUPBOX        "Compound Device Marks",IDC_STATIC,181,95,175,100
+    CONTROL         "Zoom",IDC_CCDZOOM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,190,105,34,10
+    PUSHBUTTON      "Edit...",IDC_BREFRGB,110,72,29,11
+    LTEXT           "",IDC_SREFRGB,84,73,20,8,SS_SUNKEN
+    PUSHBUTTON      "Edit...",IDC_BFIXRGB,110,87,29,11
+    LTEXT           "",IDC_SFIXRGB,84,88,20,8,SS_SUNKEN
+    PUSHBUTTON      "Edit...",IDC_BNOPRGB,110,102,29,11
+    LTEXT           "",IDC_SNOPRGB,84,103,20,8,SS_SUNKEN
+    PUSHBUTTON      "Edit...",IDC_BPARRGB,110,117,29,11
+    LTEXT           "",IDC_SPARRGB,84,118,20,8,SS_SUNKEN
+    PUSHBUTTON      "Edit...",IDC_BSTARGB,110,132,29,11
+    LTEXT           "",IDC_SSTARGB,84,133,20,8,SS_SUNKEN
+    PUSHBUTTON      "Edit...",IDC_BMARRGB,110,147,29,11
+    LTEXT           "",IDC_SMARRGB,84,148,20,8,SS_SUNKEN
+    PUSHBUTTON      "Edit...",IDC_BPASRGB,110,162,29,11
+    LTEXT           "",IDC_SPASRGB,84,163,20,8,SS_SUNKEN
+    PUSHBUTTON      "Edit...",IDC_BFAIRGB,110,176,29,11
+    LTEXT           "",IDC_SFAIRGB,84,178,20,8,SS_SUNKEN
+    LTEXT           "Even Band Color",IDC_SREF2,190,59,54,9
+    LTEXT           "Odd Band Color",IDC_STATIC,190,74,56,8
+    PUSHBUTTON      "Edit...",IDC_BEVERGB,284,58,29,11
+    LTEXT           "",IDC_SEVERGB,258,59,20,8,SS_SUNKEN
+    PUSHBUTTON      "Edit...",IDC_BODDRGB,284,72,29,11
+    LTEXT           "",IDC_SODDRGB,258,74,20,8,SS_SUNKEN
+    LTEXT           "Ink Color",IDC_SREF3,190,132,54,9
+    LTEXT           "Selection Color",IDC_STATIC,190,147,50,8
+    LTEXT           "Object Color",IDC_STATIC,190,162,55,8
+    LTEXT           "Origin Color",IDC_STATIC,190,177,56,9
+    PUSHBUTTON      "Edit...",IDC_BINKRGB,284,131,29,11
+    LTEXT           "",IDC_SINKRGB,258,132,20,8,SS_SUNKEN
+    PUSHBUTTON      "Edit...",IDC_BSELRGB,284,145,29,11
+    LTEXT           "",IDC_SSELRGB,258,147,20,8,SS_SUNKEN
+    PUSHBUTTON      "Edit...",IDC_BOBJRGB,284,161,29,11
+    LTEXT           "",IDC_SOBJRGB,258,162,20,8,SS_SUNKEN
+    PUSHBUTTON      "Edit...",IDC_BORIRGB,284,176,29,11
+    LTEXT           "",IDC_SORIRGB,258,177,20,8,SS_SUNKEN
+END
+
+SYSTEM DIALOG 0, 0, 362, 198
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "System Type",IDC_STATIC,7,7,82,80
+    GROUPBOX        "Menu Options",IDC_STATIC,207,7,148,80
+    GROUPBOX        "Optional Attributes",IDC_STATIC,207,88,148,104
+    GROUPBOX        "DDE Server Options",IDC_STATIC,94,7,108,80
+    GROUPBOX        "Time Names",IDC_STATIC,7,88,195,104
+    CONTROL         "Minimize on user quit",IDC_CDDEUSERMIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,19,86,10
+    CONTROL         "Minimize on quit",IDC_CDDEMIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,29,66,10
+    CONTROL         "Maximize on open",IDC_CDDEMAX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,39,73,10
+    CONTROL         "Send PDONE signal",IDC_CDDEPDONE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,49,80,10
+    CONTROL         "Notify on data change",IDC_CDDENOTIFY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,62,86,10
+    CONTROL         "List1",IDC_LVTIME,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,17,102,174,58
+    PUSHBUTTON      "Add",IDC_WNADD,41,170,33,13
+    PUSHBUTTON      "Remove",IDC_WNREMOVE,85,170,33,13
+    PUSHBUTTON      "Change",IDC_WNCHANGE,128,170,33,13
+    COMBOBOX        IDC_CBSYSTYPE,17,21,64,33,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Init",IDC_COPTINIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,117,25,10
+    CONTROL         "Inspect",IDC_COPTINSP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,129,39,10
+    CONTROL         "Link",IDC_COPTLINK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,141,29,10
+    CONTROL         "Conveyor",IDC_COPTCONV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,105,46,10
+    CONTROL         "Mark rotation",IDC_COPTMARKR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,153,57,10
+    CONTROL         "Mode menu",IDC_COPTMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,281,117,53,10
+    CONTROL         "Read",IDC_COPTREAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,281,129,33,10
+    CONTROL         "Rotary IMF",IDC_COPTRIMF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,281,141,51,10
+
+	CONTROL         "Rotary Degree",IDC_COPTDEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,165,57,10   //---degree
+
+    CONTROL         "Mark slant",IDC_COPTMARKS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,281,105,49,10
+    CONTROL         "Rotation",IDC_COPTROT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,281,153,43,10
+    CONTROL         "Disable bitmap marks",IDC_CNOBMP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,36,83,10
+    CONTROL         "Disable alignment interface",IDC_CNOALIGN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,49,101,10
+    CONTROL         "Disable calibration system",IDC_CNOCAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,62,97,10
+    CONTROL         "Disable font marks",IDC_CNOFONT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,23,74,10
+END
+
+FILESDIRS DIALOGEX 0, 0, 363, 199
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Directories",IDC_STATIC,7,94,246,98
+    LTEXT           "Shell",IDC_STATIC,17,24,16,8
+    EDITTEXT        IDC_ESHELL,55,21,228,14,ES_AUTOHSCROLL
+    CONTROL         "Show descriptions",IDC_CSHOWDESC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,267,109,73,10
+    CONTROL         "Don't show file popup",IDC_CPOPUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,267,137,84,10
+    CONTROL         "Show IMFs last",IDC_CIMFLAST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,267,123,64,10
+    LTEXT           "Run File",IDC_STATIC,17,44,27,8
+    EDITTEXT        IDC_ERUN,55,42,228,14,ES_AUTOHSCROLL
+    GROUPBOX        "Files",IDC_STATIC,7,7,349,86
+    GROUPBOX        "File Display Options",IDC_STATIC,259,94,97,98
+    LTEXT           "Programs",IDC_STATIC,18,111,30,8
+    EDITTEXT        IDC_EPROG,56,109,157,14,ES_AUTOHSCROLL
+    LTEXT           "Fixtures",IDC_STATIC,18,132,25,8
+    EDITTEXT        IDC_EFIXT,56,130,157,14,ES_AUTOHSCROLL
+    LTEXT           "Bitmaps",IDC_STATIC,18,153,26,8
+    EDITTEXT        IDC_EBMPS,56,151,157,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PBROWSE,222,110,19,12
+    PUSHBUTTON      "...",IDC_FBROWSE,222,131,19,12
+    PUSHBUTTON      "...",IDC_BBROWSE,222,152,19,12
+    PUSHBUTTON      "Browse...",IDC_SBROWSE,295,21,39,14
+    PUSHBUTTON      "Browse...",IDC_RBROWSE,295,42,39,14
+    LTEXT           "Load File",IDC_STATIC,17,66,30,8
+    EDITTEXT        IDC_ELOAD,55,64,228,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_LBROWSE,295,64,39,14
+    LTEXT           "VisObjects",IDC_STATIC,18,172,34,8
+    EDITTEXT        IDC_EVISOBJ,56,171,157,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_VBROWSE,222,172,19,12
+END
+
+LOCATOR DIALOG 0, 0, 365, 201
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Use vision lamp",IDC_CUSELAMP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,128,65,10
+    CONTROL         "Do inspection after each mark",IDC_CINSPMARKS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,141,111,10
+    LTEXT           "Locator Name",IDC_STATIC,20,24,73,8
+    LTEXT           "Selected Prep",IDC_STATIC,20,53,46,8
+    COMBOBOX        IDC_CBLOCNAME,20,36,105,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Locator",IDC_STATIC,7,7,351,102
+    GROUPBOX        "Locator Options",IDC_STATIC,7,110,351,84
+    EDITTEXT        IDC_PREP,20,63,91,14,ES_AUTOHSCROLL
+END
+
+EDITTIME DIALOG 0, 0, 186, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Time Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,38,81,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,81,50,14
+    LTEXT           "Seconds After Midnight",IDC_STATIC,15,26,74,8
+    LTEXT           "Time Name",IDC_STATIC,52,47,37,8
+    EDITTEXT        IDC_ETIME,97,22,67,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENAME,97,44,67,14,ES_AUTOHSCROLL
+END
+
+NEWFILE DIALOG 0, 0, 106, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,50,50,14
+    CONTROL         "New Program",IDC_NEWIMP,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,25,17,59,10
+    CONTROL         "New Fixture",IDC_NEWIMF,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,25,27,53,10
+END
+
+UPDATEFONT DIALOG 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    LTEXT           "Static",IDC_STATIC,36,22,19,8
+    EDITTEXT        IDC_EDIT1,29,38,56,14,ES_AUTOHSCROLL
+END
+
+PREVIEW DIALOG 0, 0, 344, 198
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Preview"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+DEVSYMMARKEDIT DIALOG 0, 0, 286, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Symbol"
+FONT 8, "System"
+BEGIN
+    LTEXT           "&W",IDC_XLBL,5,0,21,10,NOT WS_GROUP
+    CONTROL         "",IDC_X,"fedit",WS_BORDER | WS_TABSTOP,5,10,32,15
+    LTEXT           "&X",IDC_YLBL,41,0,21,10,NOT WS_GROUP
+    CONTROL         "",IDC_Y,"fedit",WS_BORDER | WS_TABSTOP,41,10,35,15
+    LTEXT           "&Z",IDC_ZLBL,80,0,21,10,NOT WS_GROUP
+    CONTROL         "",IDC_Z,"fedit",WS_BORDER | WS_TABSTOP,80,10,33,15
+   
+    LTEXT           "&Rot",IDC_ROTLBL,112,0,28,8,NOT WS_GROUP
+    CONTROL         "",IDC_ROT,"fedit",WS_BORDER | WS_TABSTOP,112,10,32,12
+	
+	//LTEXT           "&Deg",IDC_DEGLBL,144,0,28,8,NOT WS_GROUP   //  deg
+   // CONTROL         "",IDC_DEG,"fedit",WS_BORDER | WS_TABSTOP,144,10,32,12
+	
+	LTEXT           "&Skew",IDC_SLANTLBL,181,0,27,10,NOT WS_GROUP
+    CONTROL         "",IDC_SLANT,"fedit",WS_BORDER | WS_TABSTOP,181,10,31,15
+    LTEXT           "&Symbol",-1,5,29,32,10,NOT WS_GROUP
+    COMBOBOX        IDC_FONTS,5,39,149,80,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Justification",IDC_JUSTLBL,5,54,59,10,NOT WS_GROUP
+    COMBOBOX        IDC_JUST,5,64,72,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Width",-1,83,54,25,10,NOT WS_GROUP
+    CONTROL         "",IDC_WIDTH,"fedit",WS_BORDER | WS_TABSTOP,83,64,31,15
+    LTEXT           "&Height",-1,117,54,26,10,NOT WS_GROUP
+    CONTROL         "",IDC_HEIGHT,"fedit",WS_BORDER | WS_TABSTOP,118,64,30,15
+    LTEXT           "X &Dots",-1,151,54,26,10,NOT WS_GROUP
+    CONTROL         "",IDC_XDOTS,"sedit",WS_BORDER | WS_TABSTOP,152,64,30,15
+    LTEXT           "&Rep",IDC_REPLBL,187,54,21,10,NOT WS_GROUP
+    CONTROL         "",IDC_REPEATS,"sedit",WS_BORDER | WS_TABSTOP,186,64,15,15
+    LTEXT           "&Data (press <ins> for inserts)",-1,5,84,171,10,NOT WS_GROUP
+    CONTROL         "",IDC_WEXT,"kedit",WS_BORDER | WS_TABSTOP | 0x80,5,94,257,15
+    PUSHBUTTON      "&Locate",IDC_LOCATE,5,115,64,20
+    PUSHBUTTON      "OK",IDOK,124,115,64,20
+    PUSHBUTTON      "Cancel",IDCANCEL,199,115,64,20
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""ims5000.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    "ABOUT", DIALOG
+    BEGIN
+    END
+
+    "TIMEVAREDIT", DIALOG
+    BEGIN
+        RIGHTMARGIN, 216
+        BOTTOMMARGIN, 132
+    END
+
+    "TEXTMARKEDIT", DIALOG
+    BEGIN
+        RIGHTMARGIN, 236
+    END
+
+    "WINFONTMARKEDIT", DIALOG
+    BEGIN
+        RIGHTMARGIN, 250
+    END
+
+    "WMTRXMARKEDIT", DIALOG
+    BEGIN
+        RIGHTMARGIN, 250
+    END
+
+    "AESETUP", DIALOG
+    BEGIN
+        RIGHTMARGIN, 306
+        BOTTOMMARGIN, 247
+    END
+
+    "MARKING", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    "COLORS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 356
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    "SYSTEM", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    "FILESDIRS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 356
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    "LOCATOR", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    "EDITTIME", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    "NEWFILE", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 99
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    "UPDATEFONT", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    "PREVIEW", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    "DEVSYMMARKEDIT", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,0,0,1
+ PRODUCTVERSION 5,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "JETEC Corporation"
+            VALUE "FileDescription", "ims5000"
+            VALUE "FileVersion", "5, 0, 0, 02"
+            VALUE "InternalName", "ims5000 SE"
+            VALUE "LegalCopyright", "Copyright © 2004-2014"
+            VALUE "OriginalFilename", "ims5000.exe"
+            VALUE "ProductName", "ims5000"
+            VALUE "ProductVersion", "5, 0, 0, 02"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDE_IMSRUNNING          "Application already running!"
+    IDE_IMSINIT             "Application initialization failed!"
+    IDE_IMSINSTINIT         "Application instance initialization failed!"
+    IDE_BADIMAPI            "Incorrect IM5000.DLL version!"
+    IDE_CREATEIM            "Unable to initialize IM5000.DLL!"
+    IDE_BADIMSLIB1API       "Incorrect IMSLIB32.DLL version!"
+    IDE_CREATEFILE          "Unable to create file!"
+    IDE_WRITEFILE           "Unable to write to file!"
+END
+
+STRINGTABLE
+BEGIN
+    IDE_SHELLFAILED         "Unable to execute shell!"
+    IDE_CDPROGS             "Unable to change to programs directory!"
+    IDE_FILEDELFAILED       "Unable to delete file!"
+    IDE_OPENIMP             "Unable to open marking program!"
+    IDE_FILETYPE            "Incorrect file type!"
+    IDE_NOMEM               "Out of memory!"
+    IDE_READFILE            "Error reading from file!"
+    IDE_CREATEIMP           "Unable to create marking program!"
+    IDE_INVALIDIMP          "Invalid marking program!"
+    IDE_FNF                 "File not found!"
+    IDE_IMPMAXVARS          "The maximum number of variables have been defined!"
+    IDE_IMPMAXMARKS         "The maximum number of marks have been defined!"
+    IDE_BADVNAME            "Invalid variable name!"
+    IDE_BADVWIDTH           "Invalid variable width!"
+    IDE_VWIDTHTOOSMALL      "Width too small to hold maximum value!"
+    IDE_VMAXTOOSMALL        "Maximum cannot be greater than minimum!"
+END
+
+STRINGTABLE
+BEGIN
+    IDE_VBADSTEP            "Invalid step!"
+    IDE_VMAXOFFSTEP         "Maximum must be an integer number of steps from minimum!"
+    IDE_BADVCHAR            "Invalid character in value!"
+    IDE_VOFFSTEP            "Value does not fall on step!"
+    IDE_VTOOSMALL           "Value is too small!"
+    IDE_VTOOLARGE           "Value is too large!"
+    IDE_VCOUNTTOOLARGE      "Repeat count is too large!"
+    IDE_SVALDONE            "Serial number value at end of range!"
+    IDE_VNEARLYEND          "Variable name not terminated!"
+    IDE_VNFULL              "Variable name too long!"
+    IDE_VARNOTFOUND         "Variable not found!"
+    IDE_BADIMPORIGIN        "Invalid program origin!"
+    IDE_BADX                "X coordinate invalid!"
+    IDE_BADY                "Y coordinate invalid!"
+    IDE_BADCW               "CW invalid!"
+    IDE_BADMULTISTROKE      "MultiStroke invalid!"
+END
+
+STRINGTABLE
+BEGIN
+    IDE_BADTEXT             "Text invalid!"
+    IDE_BADXRES             "X resolution invalid!"
+    IDE_BADYRES             "Y resolution invalid!"
+    IDE_BADBMFN             "Bitmap filename invalid!"
+    IDE_BADCH               "CH invalid!"
+    IDE_BADZ                "Z coordinate invalid!"
+    IDE_SYSVARNOTFOUND      "System variable not found!"
+    IDE_USERIDEXISTS        "User ID allready used!"
+    IDE_USERIDUNKNOWN       "User ID not found!"
+    IDE_USERACODEBAD        "Incorrect password!"
+    IDE_USERLEVELBAD        "User not authorized!"
+    IDE_USERIDBAD           "Invaild User ID!"
+    IDE_USERNAMEBAD         "Invalid User Name!"
+    IDE_PASSWORDBAD         "Invalid User Password!"
+    IDE_OPENUSERFILE        "Unable to open user file!"
+    IDE_READUSERFILE        "Unable to read user file!"
+END
+
+STRINGTABLE
+BEGIN
+    IDE_BADFONT             "Unsupported font in file!"
+    IDE_FINDIJ              "Inkjet not found!"
+    IDE_HANOTFOUND          "Header attribute not found!"
+    IDE_NOTIJFONT           "Font not found on inkjet!"
+    IDE_OPENFILE            "Unable to open file!"
+    IDE_OPENIMF             "Unable to open fixture file!"
+    IDE_MAXFONTS            "The maximum number of fonts have been defined!"
+    IDE_BADYOFS             "Invalid y offset!"
+    IDE_CREATEIMF           "Unable to create fixture file!"
+    IDE_NOIMF               "Fixture not found!"
+END
+
+STRINGTABLE
+BEGIN
+    IDE_BADWIDTH            "Invalid mark width!"
+    IDE_BADHEIGHT           "Invalid mark height!"
+    IDE_BADQZONE            "Invalid Quiet Zone width!"
+    IDE_NOCANDDERUN         "IMS5000 Rotary is not available for DDE Run Mode!"
+    IDE_BADLOCATION         "Invalid Location!"
+    IDE_BADIMFEXTENT        "Invalid Extent!"
+    IDE_NOIMFNESTS          "No locations defined!"
+    IDE_BADHRPICT           "Invalid HR format!"
+    IDE_BADUDHANAME         "Invalid Header Attribute Name!"
+    IDE_IMPMAXUDHAS         "The maximum number of user defined header attributes have been defined!"
+    IDE_IMPMAXINCUDHAS      "The maximum number of included user defined header attributes have been defined!"
+    IDE_BADDAYSOFFSET       "Invalid days offset!"
+    IDE_BADHOURSOFFSET      "Invalid hours offset!"
+    IDE_BADMINUTESOFFSET    "Invalid minutes offset!"
+    IDE_BADSECONDSOFFSET    "Invalid seconds offset!"
+END
+
+STRINGTABLE
+BEGIN
+    IDE_DESCNOTFOUND        "There are no files with that description!"
+    IDE_GRIDTOOBIG          "Too many grid elements!"
+    IDE_BADREP              "Invalid repeat count!"
+    IDE_BADIMFORIGIN        "Invalid Origin!"
+    IDE_BADINSPECTPREP      "Invalid InspectPrep header attribute!"
+    IDE_FAILSTOP            "Stopped due to inspection failures!"
+    IDE_BADDMCOLS           "Invalid column constraint!"
+    IDE_BADDMROWS           "Invalid row constraint!"
+    IDE_BADXQZ              "Invalid X Quiet Zone!"
+    IDE_BADYQZ              "Invalid Y Quiet Zone!"
+    IDE_BADXSIZE            "Invalid X Size!"
+    IDE_BADYSIZE            "Invalid Y Size!"
+    IDE_BVALDONE            "Based serial number value at end of range!"
+    IDE_BADBASE             "The marking program contains a based variable with an undefined base name!"
+    IDE_ALLMARKSBLANK       "All blank marks!"
+    IDE_BADCONFIG           "Unable to select specified IMConfig!"
+END
+
+STRINGTABLE
+BEGIN
+    IDE_ONPARTDONEFAILED    "Unable to execute OnPartDone command!"
+    IDE_BADROT              "Invalid mark rotation!"
+    IDE_BADSLANT            "Invalid mark skew!"
+    IDE_BADREADPREP         "Invalid ReadPrep header attribute!"
+    IDE_BADVALIDATOR        "Unable to link optional validator specified in header!"
+    IDE_AELENDELTA          "Alignment length delta exceeded!"
+    IDE_AEROTDELTA          "Alignment rotation delta exceeded!"
+    IDE_AE0DELTA            "No delta between alignment points!"
+    IDE_NOCALS              "No calibrations available!"
+    IDE_BADFIELD            "Invalid field value!"
+    IDE_BADFRAME            "Coordinate frame non-invertable!"
+    IDE_BADVEL              "Invalid velocity!"
+    IDE_NOCURE              "No curing device is available!"
+    IDE_BADBFI              "Invalid Format!"
+    IDE_COMPBUF             "Text compiler output buffer overrun!"
+    IDE_BADUPC              "Invalid compiled UPC/EAN mark data! "
+END
+
+STRINGTABLE
+BEGIN
+    IDE_BADC2OF5            "Invalid compiled code 2 of 5 data!"
+    IDE_BADC39              "Invalid compiled code 39 data!"
+    IDE_BADC93              "Invalid compiled code 93 data!"
+    IDE_BADDEVBC            "Invalid compiled device barcode data!"
+    IDE_BADALIGNPREP        "Invalid Alignment Prep string!"
+    IDE_BADLOCATEPREP       "Invalid Locate Prep String!"
+    IDE_BADREADER           "Invalid Reader Setup!"
+END
+
+STRINGTABLE
+BEGIN
+    IDW_NOIJ                "The selected inkjet is not installed!"
+    IDW_NOFONTS             "This program contains fonts that are not available on the selected inkjet!"
+    IDW_HASBMARKS           "Side B has marks defined!"
+    IDW_BADRF               "Rotary fixture selection failed!"
+    IDW_BADBMPFMT           "Bitmap format not supported!"
+    IDW_CDEVBMPFMT          "Compound marks may have invalid bitmap format!"
+    IDW_TOOMANYBMPS         "Too many bitmap submarks!"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BLANKVALS           "Continue with blank variables?"
+    IDS_UNIQUEVALS          "Duplicate unique variable value found\nin the current cycle!\n\nDo you want to continue anyway?"
+    IDS_UNIQUEHIST          "Duplicate unique variable value has been found\nin the unique variable history!\n\nDo you want to continue anyway?"
+    IDS_UNIQUEBOTH          "Duplicate unique variable values have\nbeen found in the current cycle and in\nthe unique variable history!\n\nDo you want to continue anyway?"
+    IDS_UNIQUEVALSSTOP      "Duplicate unique variable value found\nin the current cycle!"
+    IDS_UNIQUEHISTSTOP      "Duplicate unique variable value has been found\nin the unique variable history!"
+    IDS_UNIQUEBOTHSTOP      "Duplicate unique variable values have\nbeen found in the current cycle and in\nthe unique variable history!"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

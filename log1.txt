@@ -1,0 +1,81 @@
+-------------------- IMS5000 ----------------------------------
+
+Version 10		04/20/2004
+
+* Added new error messages when marks do not compile - e.g. a UPC that is not 11 chars
+* Inserted Help menu
+
+Version 9		04/16/2004
+
+* Added some accelerators for Run, Open, Save, Test, New, Quit (Ctrl+R, etc.)
+* Some of the accelerators return if user level does not give access to command
+* Got list view to remember the last file selected
+
+Version 8		04/13/2004
+
+* Removed recent files menu
+* Fixed directory change problems after configuration
+* Made minor changes to configuration
+
+------------------- IM5000 ------------------------------------
+
+Version 8		04/23/2004
+
+* Stopped the IM from crashing if an Inkjet DLL does not have the correct API
+
+Version 7		04/13/2004
+
+* OutputDebugString used for all debug output
+
+Version 6		04/07/2004
+
+* Changed DIO driver to use new library for NT systems
+
+------------------ IJTEST32 --------------------------------
+
+Version 2
+
+* Took out bug with prompt() cutting off chars sometimes
+
+------------------ XYORION32 -------------------------------
+
+Version 2		04/07/2004
+
+* Got rid of bug in COMM::open()
+
+------------------ XYG1000 -----------------------------------
+
+Version 3		04/07/2004
+
+* Got rid of bug in COMM::open()
+* Changed code to use new DMC library
+
+------------------ XY630V -----------------------------------
+
+Version 9		04/13/2004
+
+* All debug output again using standard function OutputDebugString
+
+------------------ XYSIM32 -----------------------------------
+
+Version 4		04/13/2004
+
+* All debug output again using standard function OutputDebugString
+
+------------------ RFSX6 -----------------------------------
+
+Version 2		04/13/2004
+
+* Added debug setting to configuration
+* Fixed COMM::open() problem
+
+------------------ IJESI24 --------------------------------------
+
+Version 3		04/23/2004
+
+* Configuration displays message box for a new printer and will generate
+   default settings
+
+Version 2		04/20/2004
+
+* New field for printer type in configuration dialog
